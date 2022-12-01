@@ -1,0 +1,45 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY shifter IS
+	PORT (	data_A	: IN STD_LOGIC_VECTOR(31 DOWNTO 0);	-- 32bit input
+			ctrl_rightshift	: IN STD_LOGIC;	-- shift direction (right / NOT left)
+			ctrl_shamt	: IN STD_LOGIC_VECTOR(4 DOWNTO 0);	-- 5bit unsigned integer shift amount
+			data_S	: OUT STD_LOGIC_VECTOR(31 DOWNTO 0) );	-- 32bit output
+END shifter;
+
+ARCHITECTURE Structure OF shifter IS
+	SIGNAL L0, L1, L2, L3, L4, R0, R1, R2, R3, R4	: STD_LOGIC_VECTOR(31 DOWNTO 0);	-- 32bit mux interconnects
+	COMPONENT mux32
+		PORT (	A, B	: IN STD_LOGIC_VECTOR(31 DOWNTO 0);	-- 32bit inputs
+				s	: IN STD_LOGIC;	-- select (NOT A / B)
+				F	: OUT STD_LOGIC_VECTOR(31 DOWNTO 0) );	-- 32bit output
+	END COMPONENT;
+	
+	SIGNAL dd1, dd2, dd3, dd4, dd5, dd6, dd7, dd8, dd9, dd10 : STD_LOGIC_VECTOR(31 downto 0);
+	
+BEGIN
+
+	dd1  <= data_A(30 DOWNTO 0) & "0";
+	dd2  <= L0(29 DOWNTO 0) & "00";
+	dd3  <= L1(27 DOWNTO 0) & "0000";
+	dd4  <= L2(23 DOWNTO 0) & "00000000";
+	dd5  <= L3(15 DOWNTO 0) & "0000000000000000";
+	dd6  <= "0" & data_A(31 DOWNTO 1);
+	dd7  <= "00" & R0(31 DOWNTO 2);
+	dd8  <= "0000" & R1(31 DOWNTO 4);
+	dd9  <= "00000000" & R2(31 DOWNTO 8);
+	dd10 <= "0000000000000000" & R3(31 DOWNTO 16);
+
+	Dxxxxx:	mux32 PORT MAP (L4, R4, ctrl_rightshift, data_S);
+	LxxxxN: 	mux32 PORT MAP (data_A(31 DOWNTO 0), dd1, ctrl_shamt(0), L0);
+	LxxxNx:	mux32 PORT MAP (L0(31 DOWNTO 0), dd2, ctrl_shamt(1), L1);
+	LxxNxx:	mux32 PORT MAP (L1(31 DOWNTO 0), dd3, ctrl_shamt(2), L2);
+	LxNxxx: 	mux32 PORT MAP (L2(31 DOWNTO 0), dd4, ctrl_shamt(3), L3);
+	LNxxxx: 	mux32 PORT MAP (L3(31 DOWNTO 0), dd5, ctrl_shamt(4), L4);
+	RxxxxN:	mux32 PORT MAP (data_A(31 DOWNTO 0), dd6, ctrl_shamt(0), R0);
+	RxxxNx: 	mux32 PORT MAP (R0(31 DOWNTO 0), dd7, ctrl_shamt(1), R1);
+	RxxNxx: 	mux32 PORT MAP (R1(31 DOWNTO 0), dd8, ctrl_shamt(2), R2);
+	RxNxxx: 	mux32 PORT MAP (R2(31 DOWNTO 0), dd9, ctrl_shamt(3), R3);
+	RNxxxx: 	mux32 PORT MAP (R3(31 DOWNTO 0), dd10, ctrl_shamt(4), R4);
+END Structure;

@@ -1,0 +1,19 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY adder_rc IS
+	GENERIC(n: integer:=16);
+	PORT (	
+		A, B : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
+		cin  : IN STD_LOGIC;
+		cout : OUT STD_LOGIC;
+		sum  : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0) 
+	);
+END muxGeneric;
+
+ARCHITECTURE Structure OF muxGeneric IS
+BEGIN
+	mux : FOR i IN 0 TO n-1 GENERATE
+		mux_bit: F(i) <= (A(i) AND NOT s) OR (B(i) AND s);
+	END GENERATE mux;
+END Structure;

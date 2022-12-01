@@ -1,0 +1,31 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY ThirtyTwoBitCSLA IS
+	PORT (	A, B	: IN STD_LOGIC_VECTOR(31 DOWNTO 0);	-- 32bit addends
+			carryIn	: IN STD_LOGIC;
+			sum	: OUT STD_LOGIC_VECTOR(31 DOWNTO 0);	-- 32bit sum output
+			carryOut	: OUT STD_LOGIC);
+END ThirtyTwoBitCSLA;
+
+ARCHITECTURE Structure OF ThirtyTwoBitCSLA IS
+	SIGNAL c15, carryH0, carryH1	: STD_LOGIC;	-- internal carry / multiplexer select
+	SIGNAL sumH0, sumH1	: STD_LOGIC_VECTOR(15 DOWNTO 0);	-- temporary High vectors for port mapping
+	COMPONENT SixteenBitRCLA
+		PORT (	A, B	: IN STD_LOGIC_VECTOR(15 DOWNTO 0);	-- 16bit addends
+				carryIn	: IN STD_LOGIC;
+				sum	: OUT STD_LOGIC_VECTOR(15 DOWNTO 0);	-- 16bit sum output
+				carryOut	: OUT STD_LOGIC);
+	END COMPONENT;
+	COMPONENT mux16
+		PORT (	A, B	: IN STD_LOGIC_VECTOR(15 DOWNTO 0);	-- 16bit inputs
+				s	: IN STD_LOGIC;	-- select (NOT A / B)
+				F	: OUT STD_LOGIC_VECTOR(15 DOWNTO 0) );	-- 16bit output
+	END COMPONENT;
+BEGIN
+	lower:	SixteenBitRCLA PORT MAP (A(15 DOWNTO 0), B(15 DOWNTO 0), carryIn, sum(15 DOWNTO 0), c15);
+	upper0:	SixteenBitRCLA PORT MAP (A(31 DOWNTO 16), B(31 DOWNTO 16), '0', sumH0, carryH0);
+	upper1:	SixteenBitRCLA PORT MAP (A(31 DOWNTO 16), B(31 DOWNTO 16), '1', sumH1, carryH1);
+	upper:	mux16 PORT MAP (sumH0, sumH1, c15, sum(31 DOWNTO 16));
+	carry:	carryOut <= (carryH0 AND NOT c15) OR (carryH1 AND c15);
+END Structure;

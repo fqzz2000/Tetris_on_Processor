@@ -1,0 +1,11 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/adder_rc.vhd}
+vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/adder_cs.vhd}
+vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/mux.vhd}
+

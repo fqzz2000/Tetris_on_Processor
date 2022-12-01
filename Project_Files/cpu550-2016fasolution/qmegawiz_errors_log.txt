@@ -1,0 +1,28 @@
+
+
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/pll.vhd
+
+Oct 15 01PM:39:17>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
+
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/pll.vhd
+
+Oct 15 01PM:40:41>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
+
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/pll.vhd
+
+Oct 15 01PM:45:12>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)

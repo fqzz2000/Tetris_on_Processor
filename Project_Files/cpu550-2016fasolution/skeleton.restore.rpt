@@ -1,0 +1,104 @@
+Restore Archived Project report for skeleton
+Fri Oct 14 15:31:42 2016
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Fri Oct 14 15:31:42 2016 ;
+; Revision Name                   ; skeleton                              ;
+; Top-level Entity Name           ; skeleton                              ;
+; Family                          ; Cyclone IV E                          ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/skeletonSolution_restored/skeleton_tmp_archive.qar' into the 'C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/' directory
+Info: Generated report 'skeleton.restore.rpt'
+
+
++----------------------------------+
+; Files Restored                   ;
++----------------------------------+
+; File Name                        ;
++----------------------------------+
+; qar_info.json                    ;
+; DflipflopE.bdf                   ;
+; DflipflopE.cmp                   ;
+; EightBitCLA.vhd                  ;
+; SixteenBitRCLA.vhd               ;
+; ThirtyTwoBitCSLA.vhd             ;
+; adder.vhd                        ;
+; alu.vhd                          ;
+; control.vhd                      ;
+; decoder5to32.vhd                 ;
+; dmem.vhd                         ;
+; imem.vhd                         ;
+; latch12.vhd                      ;
+; lcd.vhd                          ;
+; mux12.vhd                        ;
+; mux16.vhd                        ;
+; mux32.vhd                        ;
+; muxGeneric.vhd                   ;
+; pll.vhd                          ;
+; processor.vhd                    ;
+; ps2.vhd                          ;
+; regfile.vhd                      ;
+; register0.vhd                    ;
+; register1bit.bdf                 ;
+; register1bit.cmp                 ;
+; register32bit.vhd                ;
+; shifter.vhd                      ;
+; skeleton.qpf                     ;
+; skeleton.qsf                     ;
+; skeleton.vhd                     ;
+; skeleton_assignment_defaults.qdf ;
+; testGiveMeN-dmem.hex             ;
+; testGiveMeN-imem.hex             ;
+; testGiveMeN_unpipelined.vwf      ;
+; triStateBuffer.bdf               ;
+; triStateBuffer.cmp               ;
++----------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

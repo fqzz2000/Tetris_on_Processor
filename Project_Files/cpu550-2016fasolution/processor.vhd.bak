@@ -1,0 +1,193 @@
+-- Course: Duke University, ECE 590 (Fall 2012)
+-- Description: unpipelined processor
+-- Revised: October 6, 2012
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY processor IS
+    PORT (	clock, reset	: IN STD_LOGIC;
+			keyboard_in	: IN STD_LOGIC_VECTOR(31 downto 0);
+			keyboard_ack, lcd_write	: OUT STD_LOGIC;
+			lcd_data	: OUT STD_LOGIC_VECTOR(31 downto 0) );
+END processor;
+
+ARCHITECTURE Structure OF processor IS
+	COMPONENT imem IS
+		PORT (	address	: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
+				clken	: IN STD_LOGIC ;
+				clock	: IN STD_LOGIC ;
+				q	: OUT STD_LOGIC_VECTOR (31 DOWNTO 0) );
+	END COMPONENT;
+	COMPONENT dmem IS
+		PORT (	address	: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
+				clock	: IN STD_LOGIC ;
+				data	: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+				wren	: IN STD_LOGIC ;
+				q	: OUT STD_LOGIC_VECTOR (31 DOWNTO 0) );
+	END COMPONENT;
+	COMPONENT regfile IS
+		PORT (	clock, ctrl_writeEnable, ctrl_reset	: IN STD_LOGIC;
+				ctrl_writeReg, ctrl_readRegA, ctrl_readRegB	: IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+				data_writeReg	: IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+				data_readRegA, data_readRegB	: OUT STD_LOGIC_VECTOR(31 DOWNTO 0) );
+	END COMPONENT;
+	COMPONENT alu IS
+		PORT (	data_operandA, data_operandB	: IN STD_LOGIC_VECTOR(31 DOWNTO 0);	-- 32bit inputs
+				ctrl_ALUopcode	: IN STD_LOGIC_VECTOR(2 DOWNTO 0);	-- 3bit ALU opcode
+				data_result	: OUT STD_LOGIC_VECTOR(31 DOWNTO 0);	-- 32bit output
+				isEqual, isGreaterThan	: OUT STD_LOGIC);
+	END COMPONENT;
+	COMPONENT SixteenBitRCLA IS
+		PORT (	A, B	: IN STD_LOGIC_VECTOR(15 DOWNTO 0);	-- 16bit inputs
+				carryIn	: IN STD_LOGIC;
+				sum	: OUT STD_LOGIC_VECTOR(15 DOWNTO 0);	-- 16bit sum output
+				carryOut	: OUT STD_LOGIC);
+	END COMPONENT;
+	COMPONENT muxGeneric IS
+		GENERIC (n: integer := 16);
+		PORT (	A, B	: IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);	-- 5bit inputs
+				s	: IN STD_LOGIC;	-- select (NOT A / B)
+				F	: OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0) );	-- 5bit output
+	END COMPONENT;
+	COMPONENT latch12 IS
+		PORT (	D	: IN STD_LOGIC_VECTOR(11 DOWNTO 0);	-- 12bits data input
+				clock, inEnable, clear	: IN STD_LOGIC;	-- clock, write enable, and reset
+				Q	: OUT STD_LOGIC_VECTOR(11 DOWNTO 0) );	-- 12bits data output
+	END COMPONENT;
+	COMPONENT control IS
+		PORT (	op	: IN STD_LOGIC_VECTOR(4 DOWNTO 0);	-- instruction opcode
+				reg_wren	: OUT STD_LOGIC;	-- register file write enable
+				immed_notRT	: OUT STD_LOGIC;	-- mux select immediate instead of $rt
+				rs_zero, rt_zero	: OUT STD_LOGIC;	-- force $rs or $rt to zero
+				rd_to_rt	: OUT STD_LOGIC;	-- redirect $rd write register to $rt read register
+				ALUopcode	: OUT STD_LOGIC_VECTOR(2 DOWNTO 0);	-- ALU opcode to ALU
+				dmem_wren	: OUT STD_LOGIC;	-- data memory write enable
+				mem_notALU	: OUT STD_LOGIC;	-- register write data from memory instead of ALU
+				branch_equals, branch_greater	: OUT STD_LOGIC;	-- branches
+				jump	: OUT STD_LOGIC;	-- jump or jump-and-link
+				link	: OUT STD_LOGIC;	-- jump-and-link store PC to $r31
+				jump_reg	: OUT STD_LOGIC;	-- return PC from register
+				keyboard	: OUT STD_LOGIC;	-- input
+				lcd	: OUT STD_LOGIC);	-- output
+	END COMPONENT;
+	
+	SIGNAL PC_current, PC_next, PC_PlusoneJump, PC_RegBranch, PC_imem	: STD_LOGIC_VECTOR(11 DOWNTO 0);
+	SIGNAL PC_plusone, PC_branch	: STD_LOGIC_VECTOR(15 DOWNTO 0);
+	SIGNAL insn	: STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL dummy1, dummy2	: STD_LOGIC;
+	SIGNAL ctrl_ALUopcode	: STD_LOGIC_VECTOR(2 DOWNTO 0);	-- control ALU opcode
+	SIGNAL ctrl_reg_wren, ctrl_immed_notRT, ctrl_rs_zero, ctrl_rt_zero, ctrl_rd_to_rt, ctrl_dmem_wren, ctrl_dmem_notALU, ctrl_branch_equals, ctrl_branch_greater, ctrl_jump, ctrl_link, ctrl_jump_reg, ctrl_keyboard, ctrl_lcd	: STD_LOGIC;	-- control signals
+	SIGNAL ctrl_readRegA, ctrl_readRegB_ZeroRd, ctrl_readRegB, ctrl_writeReg_ZeroLink, ctrl_writeReg	: STD_LOGIC_VECTOR(4 DOWNTO 0);	-- register numbers
+	SIGNAL data_readRegA, data_readRegB, data_readRegB_Immed	: STD_LOGIC_VECTOR(31 DOWNTO 0);	-- register read data
+	SIGNAL data_writeReg, data_KeyboardLink, data_AluKeyboardLink	: STD_LOGIC_VECTOR(31 DOWNTO 0);	-- register write data
+	SIGNAL isEqual, isGreaterThan, branch	: STD_LOGIC;	-- for branch-on-equals and branch-on-greater-than
+	SIGNAL data_ALUoutput, data_DMEMoutput	: STD_LOGIC_VECTOR(31 DOWNTO 0);	-- ALU data
+	SIGNAL msimDummy1, msimDummy2, msimDummy6, msimDummy9, msimDummyClk: STD_LOGIC;
+	SIGNAL msimDummy4, msimDummy7, msimDummy8: STD_LOGIC_VECTOR (15 downto 0);
+	SIGNAL msimDummy3, msimDummy5: STD_LOGIC_VECTOR(31 downto 0);
+	signal msimDummyControl : STD_LOGIC_VECTOR(4 downto 0);
+	
+BEGIN
+	msimDummy1 <= ctrl_rd_to_rt OR ctrl_rt_zero;
+	msimDummy2 <= ctrl_link OR NOT ctrl_reg_wren;
+	msimDummy3 <= insn(16)&insn(16)&insn(16)&insn(16)&insn(16)&insn(16)&insn(16)&insn(16)&insn(16)&insn(16)&insn(16)&insn(16)&insn(16)&insn(16)&insn(16)&insn(16 DOWNTO 0);
+	msimDummy4 <= "0000"&PC_current;
+	msimDummy5 <= "00000000000000000000"&PC_plusone(11 DOWNTO 0);
+	msimDummy6 <= ctrl_link OR ctrl_keyboard;
+	msimDummy7 <= "0000"&PC_plusone(11 DOWNTO 0);
+	msimDummy8 <= "0000"&insn(11 DOWNTO 0);
+	msimDummy9 <= ctrl_jump_reg OR branch;
+	msimDummyClk <= NOT clock;
+	msimDummyControl <= insn(31 downto 27);
+	
+	-- FETCH Stage
+	fetch1: muxGeneric GENERIC MAP (n => 12) PORT MAP (PC_next, "000000000000", reset, PC_imem);	-- ensure that PC_next=0 instead of 1 on reset
+	fetch2: latch12 PORT MAP (PC_imem, clock, '1', reset, PC_current);	-- PC latch
+	fetch3: imem PORT MAP (PC_imem, '1', clock, insn);	-- instruction memory
+	fetch4: SixteenBitRCLA PORT MAP (msimDummy4, "0000000000000001", '0', PC_plusone, dummy1);	-- PC+1
+	
+	-- DECODE Stage
+	decode1: control PORT MAP (msimDummyControl, ctrl_reg_wren, ctrl_immed_notRT, ctrl_rs_zero, ctrl_rt_zero, ctrl_rd_to_rt, ctrl_ALUopcode, ctrl_dmem_wren, ctrl_dmem_notALU, ctrl_branch_equals, ctrl_branch_greater, ctrl_jump, ctrl_link, ctrl_jump_reg, ctrl_keyboard, ctrl_lcd);	-- decode instruction into control signals
+	decode2: muxGeneric GENERIC MAP (n => 5) PORT MAP (insn(21 DOWNTO 17), "00000", ctrl_rs_zero, ctrl_readRegA);	-- select 0 if regA not used
+	decode3: muxGeneric GENERIC MAP (n => 5) PORT MAP ("00000", insn(26 DOWNTO 22), ctrl_rd_to_rt, ctrl_readRegB_ZeroRd);	-- select 0 if RegB not used, select RT if special insn
+	decode4: muxGeneric GENERIC MAP (n => 5) PORT MAP (insn(16 DOWNTO 12), ctrl_readRegB_ZeroRd, msimDummy1, ctrl_readRegB);
+	decode5: muxGeneric GENERIC MAP (n => 5) PORT MAP ("00000", "11111", ctrl_link, ctrl_writeReg_ZeroLink);	-- select 0 if writeReg not used, select 31 if jump-and-link insn
+	decode6: muxGeneric GENERIC MAP (n => 5) PORT MAP (insn(26 DOWNTO 22), ctrl_writeReg_ZeroLink, msimDummy2, ctrl_writeReg);
+	decode7: regfile PORT MAP (clock, ctrl_reg_wren, reset, ctrl_writeReg, ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA, data_readRegB);	-- register file
+	
+	-- EXECUTE Stage
+	execute01: muxGeneric GENERIC MAP (n => 32) PORT MAP (data_readRegB, msimDummy3, ctrl_immed_notRT, data_readRegB_Immed);	-- select between readRegB and immediate for ALU operandB
+	execute02: alu PORT MAP (data_readRegA, data_readRegB_Immed, ctrl_ALUopcode, data_ALUoutput, isEqual, isGreaterThan);	-- Arithmetic Logic Unit (ALU)
+	execute03: lcd_data <= data_readRegB; lcd_write <= ctrl_lcd;	-- LCD output
+	execute04: muxGeneric GENERIC MAP (n => 32) PORT MAP (keyboard_in, msimDummy5, ctrl_link, data_KeyboardLink);	-- keyboard input or link r31=PC_plusone
+	execute05: keyboard_ack <= ctrl_keyboard;	-- keyboard input
+	execute06: muxGeneric GENERIC MAP (n => 32) PORT MAP (data_ALUoutput, data_KeyboardLink, msimDummy6, data_AluKeyboardLink);	-- select between ALU output data or keyboard/link data for data_writeReg
+	execute07: muxGeneric GENERIC MAP (n => 12) PORT MAP (PC_plusone(11 DOWNTO 0), insn(11 DOWNTO 0), ctrl_jump, PC_PlusoneJump);	-- jump
+	execute08: SixteenBitRCLA PORT MAP (msimDummy7, msimDummy8, '0', PC_branch, dummy2);	-- calculate branch target
+	execute09: branch <= (ctrl_branch_equals AND isEqual) OR (ctrl_branch_greater AND isGreaterThan);
+	execute10: muxGeneric GENERIC MAP (n => 12) PORT MAP (data_readRegB(11 DOWNTO 0), PC_branch(11 DOWNTO 0), branch, PC_RegBranch);	-- branch or return
+	execute11: muxGeneric GENERIC MAP (n => 12) PORT MAP (PC_PlusoneJump, PC_RegBranch, msimDummy9, PC_next);	-- determine PC_next
+	
+	-- MEMORY Stage
+	memory1: dmem PORT MAP (data_ALUoutput(11 DOWNTO 0), msimDummyClk, data_readRegB, ctrl_dmem_wren, data_DMEMoutput);	-- data memory
+	
+	-- WRITEBACK Stage
+	writeback1: muxGeneric GENERIC MAP (n => 32) PORT MAP (data_AluKeyboardLink, data_DMEMoutput, ctrl_dmem_notALU, data_writeReg);	-- select between DMEMoutput or ALUoutput/keyboard/link for data_writeReg
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		--msimDummy4 <= "0000"&PC_current;
+		--fetch4: SixteenBitRCLA PORT MAP (msimDummy4, "0000000000000001", '0', PC_plusone, dummy1);	-- PC+1
+		
+		
+		
+		
+		
+END Structure;

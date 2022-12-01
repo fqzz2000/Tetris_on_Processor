@@ -1,0 +1,101 @@
+Archive Project report for skeleton
+Sun Oct 16 22:32:59 2016
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Sun Oct 16 22:32:59 2016 ;
+; Revision Name          ; skeleton                              ;
+; Top-level Entity Name  ; skeleton                              ;
+; Family                 ; Cyclone IV E                          ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION-rev1.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'skeleton.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/quartus16/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 809 megabytes
+    Info: Processing ended: Sun Oct 16 22:32:59 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++----------------------------------+
+; Files Archived                   ;
++----------------------------------+
+; File Name                        ;
++----------------------------------+
+; adder_cs.vhd                     ;
+; adder_rc.vhd                     ;
+; alu.vhd                          ;
+; control.vhd                      ;
+; cpu550-2016fa.qpf                ;
+; decoder5to32.vhd                 ;
+; dmem.vhd                         ;
+; imem.vhd                         ;
+; lcd.vhd                          ;
+; mux.vhd                          ;
+; pll.cmp                          ;
+; pll.ppf                          ;
+; pll.qip                          ;
+; pll.vhd                          ;
+; processor.vhd                    ;
+; ps2.vhd                          ;
+; reg.vhd                          ;
+; reg0_2port.vhd                   ;
+; reg_2port.vhd                    ;
+; regfile.vhd                      ;
+; shifter.vhd                      ;
+; skeleton.qsf                     ;
+; skeleton.vhd                     ;
+; skeleton_assignment_defaults.qdf ;
+; test-give_me_n-dmem.hex          ;
+; test-give_me_n-imem.hex          ;
++----------------------------------+
+
+

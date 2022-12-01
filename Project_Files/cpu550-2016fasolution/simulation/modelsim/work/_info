@@ -1,0 +1,57 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/simulation/modelsim
+Eadder_rc
+Z1 w1476556910
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 ^kCD41mNl0>`]XjZB>YSA0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 g]cnIk[[fcjg=POME[ePX3
+R0
+Z8 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/simulation/modelsim/skeleton.vho
+Z9 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/simulation/modelsim/skeleton.vho
+l0
+L35
+V<Z@[a2gg<WNk7h[1ef3Mf1
+!s100 WUN=5gh0kgg^1k4>Nlh<H3
+Z10 OV;C;10.4d;61
+32
+Z11 !s110 1476556969
+!i10b 1
+Z12 !s108 1476556969.000000
+Z13 !s90 -reportprogress|300|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/simulation/modelsim/skeleton.vho|
+Z14 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/simulation/modelsim/skeleton.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 adder_rc 0 22 <Z@[a2gg<WNk7h[1ef3Mf1
+l102
+L62
+VFa9Ce:C1YKCICFAOmCzEP0
+!s100 d<?YLAYMPn3;3WcgMPg`]2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16

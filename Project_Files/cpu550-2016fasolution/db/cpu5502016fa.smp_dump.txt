@@ -1,0 +1,14 @@
+
+State Machine - |skeleton|lcd:mylcd|state2
+Name state2.D state2.C state2.B state2.A 
+state2.A 0 0 0 0 
+state2.B 0 0 1 1 
+state2.C 0 1 0 1 
+state2.D 1 0 0 1 
+
+State Machine - |skeleton|lcd:mylcd|state1
+Name state1.D state1.C state1.B state1.A 
+state1.A 0 0 0 0 
+state1.B 0 0 1 1 
+state1.C 0 1 0 1 
+state1.D 1 0 0 1 

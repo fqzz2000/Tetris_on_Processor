@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "lcd_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_en",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_rs",
+					"strict" : false
+				},
+				{
+					"name" : "resetn",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_clock",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_data",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

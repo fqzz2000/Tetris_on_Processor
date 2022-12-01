@@ -1,0 +1,581 @@
+# Reading C:/altera_lite/16.0/modelsim_ase/tcl/vsim/pref.tcl
+# do skeleton_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# Error 133: Unable to remove directory "C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/simulation/modelsim/rtl_work".
+# vlib rtl_work
+# ** Error: (vlib-35) Failed to create directory "rtl_work".
+# 
+# File exists. (errno = EEXIST)
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying C:/altera_lite/16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/db {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/db/pll_altpll.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:34 on Oct 25,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/db" C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/db/pll_altpll.v 
+# -- Compiling module pll_altpll
+# 
+# Top level modules:
+# 	pll_altpll
+# End time: 14:30:34 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/control.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:34 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control
+# -- Compiling architecture Behavior of control
+# End time: 14:30:34 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/alu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:35 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture Structure of alu
+# End time: 14:30:35 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/decoder5to32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:35 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/decoder5to32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder5to32
+# -- Compiling architecture Structure of decoder5to32
+# End time: 14:30:36 on Oct 25,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/dmem.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:36 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/dmem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity dmem
+# -- Compiling architecture SYN of dmem
+# End time: 14:30:37 on Oct 25,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/imem.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:38 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/imem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity imem
+# -- Compiling architecture SYN of imem
+# End time: 14:30:38 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/lcd.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:38 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/lcd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity lcd
+# -- Compiling architecture a of lcd
+# End time: 14:30:38 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/processor.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:38 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity processor
+# -- Compiling architecture Structure of processor
+# End time: 14:30:38 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/ps2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:38 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/ps2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity ps2
+# -- Compiling architecture a of ps2
+# End time: 14:30:38 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/skeleton.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:38 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/skeleton.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity skeleton
+# -- Compiling architecture Structure of skeleton
+# End time: 14:30:38 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/regfile.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:39 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/regfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity regfile
+# -- Compiling architecture Structure of regfile
+# End time: 14:30:39 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/shifter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:39 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shifter
+# -- Compiling architecture Structure of shifter
+# End time: 14:30:39 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/pll.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:39 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/pll.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pll
+# -- Compiling architecture SYN of pll
+# End time: 14:30:39 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/adder_rc.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:39 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/adder_rc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_rc
+# -- Compiling architecture Structure of adder_rc
+# End time: 14:30:39 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/adder_cs.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:39 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/adder_cs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_cs
+# -- Compiling architecture Structure of adder_cs
+# End time: 14:30:40 on Oct 25,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/mux.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:40 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux
+# -- Compiling architecture Structure of mux
+# End time: 14:30:40 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:40 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity reg
+# -- Compiling architecture Structure of reg
+# End time: 14:30:40 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg_2port.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:41 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg_2port.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity reg_2port
+# -- Compiling architecture Structure of reg_2port
+# End time: 14:30:41 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg0_2port.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:30:41 on Oct 25,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg0_2port.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity reg0_2port
+# -- Compiling architecture Structure of reg0_2port
+# End time: 14:30:41 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.skeleton
+# vsim work.skeleton 
+# Start time: 14:30:47 on Oct 25,2016
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.skeleton(structure)
+# Loading work.pll(syn)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.mf_pllpack(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altpll(behavior)
+# Loading altera_mf.mf_cycloneiii_pll(vital_pll)
+# Loading altera_mf.mf_cda_mn_cntr(behave)
+# Loading altera_mf.mf_cda_scale_cntr(behave)
+# Loading work.processor(structure)
+# Loading work.mux(structure)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading work.reg(structure)
+# Loading altera.dffe(behavior)
+# Loading altera.prim_gdff(behavior)
+# Loading altera_mf.altera_mf_components
+# Loading work.imem(syn)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altsyncram(translated)
+# Loading work.adder_rc(structure)
+# Loading work.control(behavior)
+# Loading work.regfile(structure)
+# Loading work.decoder5to32(structure)
+# Loading work.reg0_2port(structure)
+# Loading altera.tri(behavior)
+# Loading work.reg_2port(structure)
+# Loading work.alu(structure)
+# Loading work.adder_cs(structure)
+# Loading work.shifter(structure)
+# Loading work.dmem(syn)
+# Loading work.ps2(a)
+# Loading work.lcd(a)
+# ** Warning: Design size of 18752 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+add wave -position end  sim:/skeleton/inclock
+add wave -position end  sim:/skeleton/resetn
+add wave -position end  sim:/skeleton/ps2_clock
+add wave -position end  sim:/skeleton/ps2_data
+add wave -position end  sim:/skeleton/lcd_data
+add wave -position end  sim:/skeleton/leds
+add wave -position end  sim:/skeleton/lcd_rw
+add wave -position end  sim:/skeleton/lcd_en
+add wave -position end  sim:/skeleton/lcd_rs
+add wave -position end  sim:/skeleton/lcd_on
+add wave -position end  sim:/skeleton/lcd_blon
+add wave -position end  sim:/skeleton/lcd_write_en
+add wave -position end  sim:/skeleton/ps2_acknowledge
+add wave -position end  sim:/skeleton/lcd_write_data
+add wave -position end  sim:/skeleton/ps2_ascii
+add wave -position end  sim:/skeleton/clock
+add wave -position end  sim:/skeleton/flag
+add wave -position end  sim:/skeleton/reset
+force -freeze sim:/skeleton/inclock 1 0, 0 {50 ps} -r 100
+force -freeze sim:/skeleton/resetn 1 0
+force -freeze sim:/skeleton/ps2_clock 0 0
+force -freeze sim:/skeleton/ps2_data 0 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/mylcd
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/mylcd
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/myps2
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/myps2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /skeleton/mylcd
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /skeleton/mylcd
+run
+add wave -position end sim:/skeleton/myprocessor/fetch2/*
+run
+run
+run
+run
+run
+force -freeze sim:/skeleton/clock 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+# ** Note: Cyclone IV E PLL locked to incoming clock
+#    Time: 1001 ps  Iteration: 3  Instance: /skeleton/div/altpll_component/CYCLONEIII_ALTPLL/M5
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/mylcd
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/mylcd
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/myps2
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/myps2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /skeleton/mylcd
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /skeleton/mylcd
+force -freeze sim:/skeleton/clock 1 0, 0 {50 ps} -r 100
+force -freeze sim:/skeleton/resetn 1 0
+force -freeze sim:/skeleton/ps2_clock 0 0
+force -freeze sim:/skeleton/ps2_data 0 0
+run
+add wave -position end  sim:/skeleton/myprocessor/fetch3/q
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+restart
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/mylcd
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/mylcd
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/myps2
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/myps2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /skeleton/mylcd
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /skeleton/mylcd
+force -freeze sim:/skeleton/resetn 0 0
+force -freeze sim:/skeleton/ps2_clock 0 0
+force -freeze sim:/skeleton/ps2_data 0 0
+force -freeze sim:/skeleton/clock 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+run
+run
+force -freeze sim:/skeleton/resetn 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position 7  sim:/skeleton/myprocessor/fetch3/address
+vsim work.adder_cs
+# End time: 15:05:29 on Oct 25,2016, Elapsed time: 0:34:42
+# Errors: 0, Warnings: 19
+# vsim work.adder_cs 
+# Start time: 15:05:30 on Oct 25,2016
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.adder_cs(structure)
+# Loading work.adder_rc(structure)
+# Loading work.mux(structure)
+add wave -position end  sim:/adder_cs/A
+add wave -position end  sim:/adder_cs/B
+add wave -position end  sim:/adder_cs/cin
+add wave -position end  sim:/adder_cs/cout
+add wave -position end  sim:/adder_cs/sum
+add wave -position end  sim:/adder_cs/signed_overflow
+add wave -position end  sim:/adder_cs/cout_lo
+add wave -position end  sim:/adder_cs/cout_hi0
+add wave -position end  sim:/adder_cs/cout_hi1
+add wave -position end  sim:/adder_cs/sum_hi0
+add wave -position end  sim:/adder_cs/sum_hi1
+add wave -position end  sim:/adder_cs/so_hi0
+add wave -position end  sim:/adder_cs/so_hi1
+run
+force -freeze sim:/adder_cs/A 00000101 0
+force -freeze sim:/adder_cs/B 00000011 0
+force -freeze sim:/adder_cs/cin 0 0
+run
+vsim work.adder_rc
+# End time: 15:06:47 on Oct 25,2016, Elapsed time: 0:01:17
+# Errors: 0, Warnings: 0
+# vsim work.adder_rc 
+# Start time: 15:06:47 on Oct 25,2016
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.adder_rc(structure)
+add wave -position end  sim:/adder_rc/A
+add wave -position end  sim:/adder_rc/B
+add wave -position end  sim:/adder_rc/cin
+add wave -position end  sim:/adder_rc/cout
+add wave -position end  sim:/adder_rc/sum
+add wave -position end  sim:/adder_rc/signed_overflow
+add wave -position end  sim:/adder_rc/carry
+add wave -position end  sim:/adder_rc/sum_s
+add wave -position 0  sim:/adder_rc/n
+force -freeze sim:/adder_rc/A 0101 0
+force -freeze sim:/adder_rc/B 0011 0
+run
+restart
+run
+force -freeze sim:/adder_rc/A 0101 0
+force -freeze sim:/adder_rc/B 0011 0
+force -freeze sim:/adder_rc/cin 0 0
+run
+vsim work.skeleton
+# End time: 15:30:43 on Oct 25,2016, Elapsed time: 0:23:56
+# Errors: 0, Warnings: 0
+# vsim work.skeleton 
+# Start time: 15:30:44 on Oct 25,2016
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.skeleton(structure)
+# Loading work.pll(syn)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.mf_pllpack(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altpll(behavior)
+# Loading altera_mf.mf_cycloneiii_pll(vital_pll)
+# Loading altera_mf.mf_cda_mn_cntr(behave)
+# Loading altera_mf.mf_cda_scale_cntr(behave)
+# Loading work.processor(structure)
+# Loading work.mux(structure)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading work.reg(structure)
+# Loading altera.dffe(behavior)
+# Loading altera.prim_gdff(behavior)
+# Loading altera_mf.altera_mf_components
+# Loading work.imem(syn)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altsyncram(translated)
+# Loading work.adder_rc(structure)
+# Loading work.control(behavior)
+# Loading work.regfile(structure)
+# Loading work.decoder5to32(structure)
+# Loading work.reg0_2port(structure)
+# Loading altera.tri(behavior)
+# Loading work.reg_2port(structure)
+# Loading work.alu(structure)
+# Loading work.adder_cs(structure)
+# Loading work.shifter(structure)
+# Loading work.dmem(syn)
+# Loading work.ps2(a)
+# Loading work.lcd(a)
+# ** Warning: Design size of 18752 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+add wave -position end  sim:/skeleton/resetn
+add wave -position end  sim:/skeleton/ps2_clock
+add wave -position end  sim:/skeleton/ps2_data
+add wave -position 1  sim:/skeleton/clock
+add wave -position end  sim:/skeleton/myprocessor/fetch2/D
+add wave -position end  sim:/skeleton/myprocessor/fetch2/clear
+add wave -position end  sim:/skeleton/myprocessor/fetch2/Q
+add wave -position end sim:/skeleton/myprocessor/fetch3/*
+add wave -position end  sim:/skeleton/myprocessor/fetch3/address
+add wave -position end  sim:/skeleton/myprocessor/fetch3/q
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/mylcd
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/mylcd
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/myps2
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton/myps2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /skeleton/mylcd
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /skeleton/mylcd
+force -freeze sim:/skeleton/resetn 1 0
+force -freeze sim:/skeleton/clock 1 0, 0 {50 ps} -r 100
+force -freeze sim:/skeleton/ps2_clock 0 0
+force -freeze sim:/skeleton/ps2_data 0 0
+run
+run
+run
+force -freeze sim:/skeleton/resetn 0 0
+run
+run
+force -freeze sim:/skeleton/resetn 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 15:43:07 on Oct 25,2016, Elapsed time: 0:12:23
+# Errors: 0, Warnings: 7

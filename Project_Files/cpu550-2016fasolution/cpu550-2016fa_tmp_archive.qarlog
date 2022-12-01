@@ -1,0 +1,44 @@
+Quartus Prime Archive log --	C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/cpu550-2016fa_tmp_archive.qarlog
+
+Archive:	C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/cpu550-2016fa_tmp_archive.qar
+Date:		Sun Oct 16 12:29:17 2016
+Quartus Prime		16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/adder_cs.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/adder_rc.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/alu.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/control.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/cpu550-2016fa.qpf
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/decoder5to32.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/dmem.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/imem.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/lcd.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/mux.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/pll.cmp
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/pll.ppf
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/pll.qip
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/pll.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/processor.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/ps2.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/reg.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/reg0_2port.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/reg_2port.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/regfile.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/shifter.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/skeleton.qsf
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/skeleton.vhd
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/skeleton_assignment_defaults.qdf
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/testGiveMeN_unpipelined.vwf
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/testgivemen-dmem.hex
+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/testgivemen-imem.hex
+	======= Total: 27 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sun Oct 16 12:29:19 2016
+Source archive file:	C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa/cpu550-2016fa_tmp_archive.qar
+Archive was extracted into	C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/cpu550-2016fa-skeleton/
+		 - successfully.

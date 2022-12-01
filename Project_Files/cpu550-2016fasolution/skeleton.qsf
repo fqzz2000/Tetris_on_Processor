@@ -1,0 +1,107 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 222 10/21/2009 SJ Web Edition
+# Date created = 22:01:22  December 26, 2009
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		skeleton_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY skeleton
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:01:22  DECEMBER 26, 2009"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_L6 -to lcd_blon
+set_location_assignment PIN_M2 -to lcd_rs
+set_location_assignment PIN_L4 -to lcd_en
+set_location_assignment PIN_L5 -to lcd_on
+set_location_assignment PIN_M1 -to lcd_rw
+set_location_assignment PIN_Y2 -to inclock
+set_location_assignment PIN_H5 -to ps2_data
+set_location_assignment PIN_G6 -to ps2_clock
+set_location_assignment PIN_E21 -to leds[0]
+set_location_assignment PIN_E22 -to leds[1]
+set_location_assignment PIN_E25 -to leds[2]
+set_location_assignment PIN_E24 -to leds[3]
+set_location_assignment PIN_H21 -to leds[4]
+set_location_assignment PIN_G20 -to leds[5]
+set_location_assignment PIN_G22 -to leds[6]
+set_location_assignment PIN_G21 -to leds[7]
+set_location_assignment PIN_M23 -to resetn
+set_location_assignment PIN_L3 -to lcd_data[0]
+set_location_assignment PIN_L1 -to lcd_data[1]
+set_location_assignment PIN_L2 -to lcd_data[2]
+set_location_assignment PIN_K7 -to lcd_data[3]
+set_location_assignment PIN_K1 -to lcd_data[4]
+set_location_assignment PIN_K2 -to lcd_data[5]
+set_location_assignment PIN_M3 -to lcd_data[6]
+set_location_assignment PIN_M5 -to lcd_data[7]
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE testGiveMeN_unpipelined.vwf
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name HEX_FILE "test-give_me_n-imem.hex"
+set_global_assignment -name HEX_FILE "test-give_me_n-dmem.hex"
+set_global_assignment -name HEX_FILE "test-fibonacci-imem.hex"
+set_global_assignment -name HEX_FILE "test-fibonacci-dmem.hex"
+set_global_assignment -name VHDL_FILE control.vhd
+set_global_assignment -name SOURCE_FILE DflipflopE.cmp
+set_global_assignment -name VHDL_FILE alu.vhd
+set_global_assignment -name VHDL_FILE decoder5to32.vhd
+set_global_assignment -name VHDL_FILE dmem.vhd
+set_global_assignment -name VHDL_FILE imem.vhd
+set_global_assignment -name VHDL_FILE lcd.vhd
+set_global_assignment -name VHDL_FILE processor.vhd
+set_global_assignment -name VHDL_FILE ps2.vhd
+set_global_assignment -name VHDL_FILE skeleton.vhd
+set_global_assignment -name VHDL_FILE regfile.vhd
+set_global_assignment -name VHDL_FILE shifter.vhd
+set_global_assignment -name QIP_FILE pll.qip
+set_global_assignment -name VHDL_FILE adder_rc.vhd
+set_global_assignment -name VHDL_FILE adder_cs.vhd
+set_global_assignment -name VHDL_FILE mux.vhd
+set_global_assignment -name VHDL_FILE reg.vhd
+set_global_assignment -name VHDL_FILE reg_2port.vhd
+set_global_assignment -name VHDL_FILE reg0_2port.vhd
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

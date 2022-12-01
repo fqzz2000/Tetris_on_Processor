@@ -1,0 +1,771 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/simulation/modelsim
+Eadder_cs
+Z1 w1476634956
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/adder_cs.vhd
+Z5 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/adder_cs.vhd
+l0
+L7
+VaY;DGVM^lHI_THkkf3hTn3
+!s100 D5R^];Kc6V<ZanP``:@]f1
+Z6 OV;C;10.4d;61
+31
+Z7 !s110 1477420239
+!i10b 1
+Z8 !s108 1477420239.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/adder_cs.vhd|
+Z10 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/adder_cs.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Astructure
+R2
+R3
+DEx4 work 8 adder_cs 0 22 aY;DGVM^lHI_THkkf3hTn3
+l36
+L17
+V5_Ro?I7LF5KkXAD1Ej5ch1
+!s100 oI2PMX3nf@36<ZCJ5_^o02
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eadder_rc
+Z13 w1476634951
+R2
+R3
+R0
+Z14 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/adder_rc.vhd
+Z15 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/adder_rc.vhd
+l0
+L7
+VZ>6;Q5SiMcBKzbHzNHhi13
+!s100 `[?0I`Z5kk77hJn]LDSPd2
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/adder_rc.vhd|
+Z17 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/adder_rc.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 8 adder_rc 0 22 Z>6;Q5SiMcBKzbHzNHhi13
+l20
+L17
+VTXaIN<XA2nTAD2:OO6^nE0
+!s100 XV`2F_K2P6`GgJJdLQ5L@1
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Ealu
+Z18 w1476587828
+R2
+R3
+R0
+Z19 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/alu.vhd
+Z20 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/alu.vhd
+l0
+L16
+VnKjjIJY`ZU[FYo=dQCT<E3
+!s100 ^U4c5EC@R:PG6NEjzj`4N0
+R6
+31
+Z21 !s110 1477420235
+!i10b 1
+Z22 !s108 1477420235.000000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/alu.vhd|
+Z24 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/alu.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 3 alu 0 22 nKjjIJY`ZU[FYo=dQCT<E3
+l44
+L24
+VEU2ZR1LeJC?8Y`dCZDoFY3
+!s100 jQB74X]zgkKGF8;9`Ogn[3
+R6
+31
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R11
+R12
+Econtrol
+Z25 w1476634800
+R2
+R3
+R0
+Z26 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/control.vhd
+Z27 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/control.vhd
+l0
+L7
+V:InVL>If>TgAGJ^J_hgTN3
+!s100 fmRG<P=YohKH>jgdONVbU3
+R6
+31
+Z28 !s110 1477420234
+!i10b 1
+Z29 !s108 1477420234.000000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/control.vhd|
+Z31 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/control.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 7 control 0 22 :InVL>If>TgAGJ^J_hgTN3
+l25
+L24
+VPR8l3m3aU@0eOQPPYLA951
+!s100 [9R0BM^fVWIDeLUF`RM=23
+R6
+31
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R11
+R12
+Edecoder5to32
+Z32 w1476634813
+R2
+R3
+R0
+Z33 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/decoder5to32.vhd
+Z34 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/decoder5to32.vhd
+l0
+L7
+V31]WRkQ=_z97`CH^72C4d1
+!s100 m>O[d_c82Y4ZJl6X@@HT20
+R6
+31
+R21
+!i10b 1
+R22
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/decoder5to32.vhd|
+Z36 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/decoder5to32.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 12 decoder5to32 0 22 31]WRkQ=_z97`CH^72C4d1
+l13
+L12
+Vi7ORMOUAZ0<bWO:KbomGV0
+!s100 `Q?V246oS6SS4>SSifkO;1
+R6
+31
+R21
+!i10b 1
+R22
+R35
+R36
+!i113 1
+R11
+R12
+Edmem
+Z37 w1476993118
+Z38 DPx9 altera_mf 20 altera_mf_components 0 22 JIZVPUohD7dNa?8:C5^LG2
+R2
+R3
+R0
+Z39 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/dmem.vhd
+Z40 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/dmem.vhd
+l0
+L43
+V;>Oi=<30oB^=[kI_<gN4[1
+!s100 d?O>jgfR0UGD6_nDdA<Tb1
+R6
+31
+Z41 !s110 1477420236
+!i10b 1
+Z42 !s108 1477420236.000000
+Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/dmem.vhd|
+Z44 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/dmem.vhd|
+!i113 1
+R11
+R12
+Asyn
+R38
+R2
+R3
+DEx4 work 4 dmem 0 22 ;>Oi=<30oB^=[kI_<gN4[1
+l59
+L55
+V2HIVgFcfUH8QO_7[J:dg[2
+!s100 ICHfho1eFbgQUFllTWf^o0
+R6
+31
+R41
+!i10b 1
+R42
+R43
+R44
+!i113 1
+R11
+R12
+Eimem
+Z45 w1476993097
+R38
+R2
+R3
+R0
+Z46 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/imem.vhd
+Z47 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/imem.vhd
+l0
+L43
+Vfc^RNAIzEOk2AD;WQDeQh2
+!s100 g:0T`KDSV=iIZ96SG2<BG1
+R6
+31
+Z48 !s110 1477420238
+!i10b 1
+Z49 !s108 1477420238.000000
+Z50 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/imem.vhd|
+Z51 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/imem.vhd|
+!i113 1
+R11
+R12
+Asyn
+R38
+R2
+R3
+DEx4 work 4 imem 0 22 fc^RNAIzEOk2AD;WQDeQh2
+l58
+L54
+VH4ImRP`OTK_?ng<VzO==_1
+!s100 Vz2hjZl:k]jji9``^;`Ch0
+R6
+31
+R48
+!i10b 1
+R49
+R50
+R51
+!i113 1
+R11
+R12
+Elcd
+Z52 w1476634825
+Z53 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z54 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+R0
+Z55 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/lcd.vhd
+Z56 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/lcd.vhd
+l0
+L9
+V`3l]8S;2TilXi]Y>DAObF2
+!s100 XdQWV2gLH0Xc;DhjR27bT0
+R6
+31
+R48
+!i10b 1
+R49
+Z57 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/lcd.vhd|
+Z58 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/lcd.vhd|
+!i113 1
+R11
+R12
+Aa
+R53
+R54
+R2
+R3
+DEx4 work 3 lcd 0 22 `3l]8S;2TilXi]Y>DAObF2
+l33
+L19
+VXlEE:33h65JJQgafzYC6`3
+!s100 oMjIPXdlX9F<I2SX<fg4F1
+R6
+31
+R48
+!i10b 1
+R49
+R57
+R58
+!i113 1
+R11
+R12
+Emux
+Z59 w1476634969
+R2
+R3
+R0
+Z60 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/mux.vhd
+Z61 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/mux.vhd
+l0
+L8
+VA><S49[zOTIa@_Zdf_PBg3
+!s100 KIIXM7b7OhDXzb@OWFznR1
+R6
+31
+Z62 !s110 1477420240
+!i10b 1
+Z63 !s108 1477420240.000000
+Z64 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/mux.vhd|
+Z65 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/mux.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 3 mux 0 22 A><S49[zOTIa@_Zdf_PBg3
+l16
+L15
+VH:RkQ26MmD8UVVAkR7eAi2
+!s100 XYj]]]PCo=?@D]z3CDUOB3
+R6
+31
+R62
+!i10b 1
+R63
+R64
+R65
+!i113 1
+R11
+R12
+Epll
+Z66 w1476580985
+R2
+R3
+R0
+Z67 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/pll.vhd
+Z68 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/pll.vhd
+l0
+L43
+V3zDIV9Aj>Agi_FQnIE3R71
+!s100 A<H4AY;Y0hFFY7nE=<T@T1
+R6
+31
+R7
+!i10b 1
+R8
+Z69 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/pll.vhd|
+Z70 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/pll.vhd|
+!i113 1
+R11
+R12
+Asyn
+R2
+R3
+DEx4 work 3 pll 0 22 3zDIV9Aj>Agi_FQnIE3R71
+l126
+L52
+V_m5eV24<kLS^5;UFTE67_0
+!s100 ]0M?aca><U]8cgJ;P0SaG1
+R6
+31
+R7
+!i10b 1
+R8
+R69
+R70
+!i113 1
+R11
+R12
+vpll_altpll
+R28
+!i10b 1
+!s100 U?aB6bz8NFgQ<dSVHYP@^1
+Id4ZDjFn>:9DBVXYfaMV;S0
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1476580999
+8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/db/pll_altpll.v
+FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/db/pll_altpll.v
+L0 30
+OV;L;10.4d;61
+r1
+!s85 0
+31
+R29
+!s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/db|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/db/pll_altpll.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/db
+Eprocessor
+Z71 w1476635097
+R2
+R3
+R0
+Z72 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/processor.vhd
+Z73 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/processor.vhd
+l0
+L8
+V5AFlMeRGLjZc=>@dT;XHF3
+!s100 =g>g2FCUI3Ecjc3NiXSA`3
+R6
+31
+R48
+!i10b 1
+R49
+Z74 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/processor.vhd|
+Z75 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/processor.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 9 processor 0 22 5AFlMeRGLjZc=>@dT;XHF3
+l96
+L15
+VO9gUJ19LFAca_j_:=bO<G1
+!s100 NHCg?n9GG>6G]El7^Z_P=1
+R6
+31
+R48
+!i10b 1
+R49
+R74
+R75
+!i113 1
+R11
+R12
+Eps2
+Z76 w1476634853
+R53
+R54
+R2
+R3
+R0
+Z77 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/ps2.vhd
+Z78 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/ps2.vhd
+l0
+L9
+V?c[0URlJlRbQoC2j5bB<z1
+!s100 Z3jPgg`YoXI=d<QR8;mD82
+R6
+31
+R48
+!i10b 1
+R49
+Z79 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/ps2.vhd|
+Z80 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/ps2.vhd|
+!i113 1
+R11
+R12
+Aa
+R53
+R54
+R2
+R3
+DEx4 work 3 ps2 0 22 ?c[0URlJlRbQoC2j5bB<z1
+l81
+L17
+V4ek1P26[DC2kLQB3?OBPX0
+!s100 =bh6OI`ODmGmEC;Rc17Kh3
+R6
+31
+R48
+!i10b 1
+R49
+R79
+R80
+!i113 1
+R11
+R12
+Ereg
+Z81 w1476635151
+Z82 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z83 DPx6 altera 11 dffeas_pack 0 22 f]3lf9@YecQXY?:9nU3z[2
+Z84 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z85 DPx6 altera 28 altera_primitives_components 0 22 Y1<AEW^7fEcRY3jd0@`=U2
+R2
+R3
+R0
+Z86 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg.vhd
+Z87 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg.vhd
+l0
+L9
+VCWO@07ej>;F6W;?f;Bi@d0
+!s100 N;^I=OfVhZmC1?k;S=1Cb1
+R6
+31
+R62
+!i10b 1
+R63
+Z88 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg.vhd|
+Z89 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg.vhd|
+!i113 1
+R11
+R12
+Astructure
+R82
+R83
+R84
+R85
+R2
+R3
+DEx4 work 3 reg 0 22 CWO@07ej>;F6W;?f;Bi@d0
+l26
+L16
+VRZ>F:BLn?FaDOXi2IoIae2
+!s100 zAiG2H5H_`GBh@YV54G]S0
+R6
+31
+R62
+!i10b 1
+R63
+R88
+R89
+!i113 1
+R11
+R12
+Ereg0_2port
+Z90 w1476635028
+R82
+R83
+R84
+R85
+R2
+R3
+R0
+Z91 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg0_2port.vhd
+Z92 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg0_2port.vhd
+l0
+L9
+VkRR3Ae[94K97JLbk>1_H40
+!s100 WA12HBS2dW2WW:`@gKZZ<1
+R6
+31
+Z93 !s110 1477420241
+!i10b 1
+Z94 !s108 1477420241.000000
+Z95 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg0_2port.vhd|
+Z96 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg0_2port.vhd|
+!i113 1
+R11
+R12
+Astructure
+R82
+R83
+R84
+R85
+R2
+R3
+DEx4 work 10 reg0_2port 0 22 kRR3Ae[94K97JLbk>1_H40
+l22
+L15
+VoZd_N2jfN_W4THedE>We]3
+!s100 TJ_PhXze107[5hKgYeckZ0
+R6
+31
+R93
+!i10b 1
+R94
+R95
+R96
+!i113 1
+R11
+R12
+Ereg_2port
+Z97 w1476635013
+R82
+R83
+R84
+R85
+R2
+R3
+R0
+Z98 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg_2port.vhd
+Z99 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg_2port.vhd
+l0
+L9
+Vhi@:l:n=bVEEaE<>>TLJI0
+!s100 =mc74:dzzhHKRPJW32SGF3
+R6
+31
+R93
+!i10b 1
+R94
+Z100 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg_2port.vhd|
+Z101 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/reg_2port.vhd|
+!i113 1
+R11
+R12
+Astructure
+R82
+R83
+R84
+R85
+R2
+R3
+DEx4 work 9 reg_2port 0 22 hi@:l:n=bVEEaE<>>TLJI0
+l30
+L16
+VaQC:ge[>;CP3=7UT<VeSX2
+!s100 3GUN^Jk03Znhz8D^f=@hE2
+R6
+31
+R93
+!i10b 1
+R94
+R100
+R101
+!i113 1
+R11
+R12
+Eregfile
+Z102 w1476635053
+R2
+R3
+R0
+Z103 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/regfile.vhd
+Z104 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/regfile.vhd
+l0
+L4
+VNMJRK`_eQ]TZ;=zBl1IOg1
+!s100 Sl^Z3R<li093NZb7=L1e00
+R6
+31
+R7
+!i10b 1
+R8
+Z105 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/regfile.vhd|
+Z106 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/regfile.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 7 regfile 0 22 NMJRK`_eQ]TZ;=zBl1IOg1
+l28
+L11
+V>KFFSFG@9=HY;M0QI?VBR2
+!s100 Ac`fOI^O9YjZhm@MH9lW62
+R6
+31
+R7
+!i10b 1
+R8
+R105
+R106
+!i113 1
+R11
+R12
+Eshifter
+Z107 w1476634786
+R2
+R3
+R0
+Z108 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/shifter.vhd
+Z109 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/shifter.vhd
+l0
+L8
+V[=H50JCCh_]YC;d=2`cfO2
+!s100 CYAOzm?6<EPhjH@R`N11_0
+R6
+31
+R7
+!i10b 1
+R8
+Z110 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/shifter.vhd|
+Z111 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/shifter.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 7 shifter 0 22 [=H50JCCh_]YC;d=2`cfO2
+l26
+L15
+VWVW6lDl?l0fY8_GBMhVbz3
+!s100 DcM]Y8a_HYbaUC=fDd@1O1
+R6
+31
+R7
+!i10b 1
+R8
+R110
+R111
+!i113 1
+R11
+R12
+Eskeleton
+Z112 w1476634937
+R53
+R2
+R3
+R0
+Z113 8C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/skeleton.vhd
+Z114 FC:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/skeleton.vhd
+l0
+L9
+V`[4M=_99XW6oBYIL>fO?h1
+!s100 Fn4e@FQ]WN`SdLP[k<TM71
+R6
+31
+R48
+!i10b 1
+R49
+Z115 !s90 -reportprogress|300|-93|-work|work|C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/skeleton.vhd|
+Z116 !s107 C:/Users/tkbletsc/Dropbox/Duke/ECE550/Homework/Homework4/CPU/cpu550-2016fa-SOLUTION/skeleton.vhd|
+!i113 1
+R11
+R12
+Astructure
+R53
+R2
+R3
+DEx4 work 8 skeleton 0 22 `[4M=_99XW6oBYIL>fO?h1
+l42
+L15
+VHfBaPa4o]BbXOzHmf6L;X0
+!s100 nZd^=8ZLi7@dJ[17OAHAA3
+R6
+31
+R48
+!i10b 1
+R49
+R115
+R116
+!i113 1
+R11
+R12
