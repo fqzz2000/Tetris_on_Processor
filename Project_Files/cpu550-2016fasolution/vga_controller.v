@@ -5,16 +5,11 @@ module vga_controller(iRST_n,
                       oVS,
                       b_data,
                       g_data,
-                      r_data,
-							up,
-							down,
-							left,
-							right);
+                      r_data);
 
 	
 input iRST_n;
 input iVGA_CLK;
-input up, down, left, right;
 output reg oBLANK_n;
 output reg oHS;
 output reg oVS;
@@ -44,33 +39,7 @@ video_sync_generator LTM_ins (.vga_clk(iVGA_CLK),
                               .blank_n(cBLANK_n),
                               .HS(cHS),
                               .VS(cVS));
-////
-//always@(negedge up) y_s <= (y_s - 1 + 480) % 480;
-//always@(negedge down) y_s <= (y_s + 1) % 480;
-//always@(negedge left) x_s <= (x_s - 1 + 640) % 640;
-//always@(negedge right) x_s <= (x_s + 1) % 640;
-always@(negedge VGA_CLK_n)
-begin
-if (counter == 0) begin
-if (left == 0) 
-begin 
-if (x_s > 0) x_s <= (x_s - 1);
-end
-if (right == 0) 
-begin
-if (x_s < 590) x_s <= (x_s + 1);
-end
-if (up == 0) 
-begin
-if (y_s > 0) y_s <= (y_s - 1);
-end
-if (down == 0)
-begin
-if (y_s < 430) y_s <= (y_s + 1);
-end
-end
-counter <= (counter + 1) % (1 << 15);
-end
+
 ////Addresss generator
 always@(posedge iVGA_CLK,negedge iRST_n)
 begin
@@ -106,18 +75,9 @@ img_index	img_index_inst (
 
 
 //////latch valid data at falling edge;
-always@(posedge VGA_CLK_n) 
-begin
-if ( (ADDR % 640 - x_s <= 50)  && (ADDR % 640 - x_s >= 0) && (ADDR / 640 - y_s <= 50) && (ADDR / 640 - y_s >= 0)) begin
-//if (y_s > 110 && x_s > 50) begin
-bgr_data <= 24'hFFFFFF;
-end else begin
-bgr_data <= bgr_data_raw;
-end
-end
-assign b_data = bgr_data[23:16];
-assign g_data = bgr_data[15:8];
-assign r_data = bgr_data[7:0]; 
+assign b_data = bgr_data_raw[23:16];
+assign g_data = bgr_data_raw[15:8];
+assign r_data = bgr_data_raw[7:0]; 
 ///////////////////
 //////Delay the iHD, iVD,iDEN for one clock cycle;
 always@(negedge iVGA_CLK)

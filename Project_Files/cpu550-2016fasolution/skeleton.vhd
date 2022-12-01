@@ -9,7 +9,10 @@ USE ieee.std_logic_arith.all;
 ENTITY skeleton IS
 	PORT (	inclock, resetn, ps2_clock, ps2_data	: IN STD_LOGIC;
 			lcd_data, leds	: OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-			lcd_rw, lcd_en, lcd_rs, lcd_on, lcd_blon	: OUT STD_LOGIC);
+			lcd_rw, lcd_en, lcd_rs, lcd_on, lcd_blon	: OUT STD_LOGIC;--);
+			-- ADDED BY QUANZHI--
+			VGA_CLK, VGA_HS, VGA_VS, VGA_BLANK, VGA_SYNC : OUT STD_LOGIC; -- PORT FOR VGA
+			VGA_R, VGA_G, VGA_B : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)); -- DATA FOR VGA
 END skeleton;
 
 ARCHITECTURE Structure OF skeleton IS
@@ -37,8 +40,40 @@ ARCHITECTURE Structure OF skeleton IS
 		PORT (	inclk0	: IN STD_LOGIC;
 				c0	: OUT STD_LOGIC);
 	END COMPONENT;
+	-- add by Quanzhi VGA Related module --
+	COMPONENT Reset_Delay IS
+		PORT ( iCLK : IN STD_LOGIC;
+				oRESET : OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT VGA_Audio_PLL IS
+		PORT (	areset : IN STD_LOGIC;
+				inclk0 : IN STD_LOGIC;
+				c0 : OUT STD_LOGIC;
+				c1 : OUT STD_LOGIC;
+				c2 : OUT STD_LOGIC);
+	END COMPONENT;	
+	
+	COMPONENT vga_controller IS
+		PORT (	iRST_n : IN STD_LOGIC;
+				iVGA_CLK : IN STD_LOGIC;
+				oBLANK_n : OUT STD_LOGIC;
+				oHS : OUT STD_LOGIC;
+				oVS : OUT STD_LOGIC;
+				b_data : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+				g_data : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+				r_data : OUT STD_LOGIC_VECTOR(7 DOWNTO 0));
+	END COMPONENT;
+	-- end section --
 	
 	SIGNAL reset : STD_LOGIC;
+	-- SIGNAL ADD BY QUANZHI --
+	SIGNAL DLY_RST : STD_LOGIC;
+	SIGNAL NDLY_RST : STD_LOGIC;
+	SIGNAL VGA_CTRL_CLK : STD_LOGIC;
+	SIGNAL AUD_CTRL_CLK : STD_LOGIC;
+	SIGNAL VGA_CLK_FOR_CTRL : STD_LOGIC;
+	-- END SECTION --
 BEGIN
 	--clock divider
 	div:	pll PORT MAP (inclock, clock);
@@ -57,4 +92,12 @@ BEGIN
 
 	-- some LEDs that you could use for debugging if you wanted
 	leds <= "00101010";
+	
+	-- add by Quanzhi --
+	NDLY_RST <= NOT DLY_RST;
+	VGA_CLK <= VGA_CLK_FOR_CTRL;
+	r0:		Reset_Delay PORT MAP (inclock, DLY_RST);
+	p1:		VGA_Audio_PLL PORT MAP (NDLY_RST, inclock, VGA_CTRL_CLK, AUD_CTRL_CLK, VGA_CLK_FOR_CTRL);
+	vga_ins: vga_controller PORT MAP (DLY_RST, VGA_CLK_FOR_CTRL, VGA_BLANK, VGA_HS, VGA_VS, VGA_B, VGA_G, VGA_R);
+	-- end section --
 END Structure;
