@@ -25,8 +25,6 @@ wire VGA_CLK_n;
 wire [7:0] index;
 wire [23:0] bgr_data_raw;
 wire cBLANK_n,cHS,cVS,rst;
-reg [18:0] x_s, y_s;
-reg [15:0]counter;
 
 initial
 begin
@@ -73,23 +71,45 @@ img_index	img_index_inst (
 	.clock ( iVGA_CLK ),
 	.q ( bgr_data_raw)
 	);	
+
+	
 //////
-always@(posedge VGA_CLK_n)
-begin
-	if (grid_data == 2000'h8)
+//always@(posedge VGA_CLK_n)
+//begin
+//	if (grid_data == 2000'h8)
+//	begin
+//	bgr_data <= 24'h00ffff;
+//	end
+//	else 
+//	begin
+//	bgr_data <= bgr_data_raw;
+//	end
+//end
+
+// square coordination
+reg [10:0] sqX;
+reg [10:0] sqY;
+// background coordination
+reg [10:0] bgX;
+reg [10:0] bgY;
+reg [16:0] counter;
+// button
+input moveUp, moveDown, moveLeft, moveRight;
+reg[9:0] scores;// input
+integer SD,TD,HD
+
+always@(posedge VGA_CLK_n) begin
 	begin
-	bgr_data <= 24'h00ffff;
-	end
-	else 
-	begin
-	bgr_data <= bgr_data_raw;
+		
 	end
 end
 
+
+
 //////latch valid data at falling edge;
-assign b_data = bgr_data[23:16];
-assign g_data = bgr_data[15:8];
-assign r_data = bgr_data[7:0]; 
+assign b_data = bgr_data_raw[23:16];
+assign g_data = bgr_data_raw[15:8];
+assign r_data = bgr_data_raw[7:0]; 
 
 ///////////////////
 //////Delay the iHD, iVD,iDEN for one clock cycle;

@@ -14,13 +14,13 @@
 
 -- Quartus Prime generated Memory Initialization File (.mif)
 
-WIDTH=8;
-DEPTH=307200;
+WIDTH=24;
+DEPTH=256;
 
 ADDRESS_RADIX=HEX;
 DATA_RADIX=HEX;
 
 CONTENT BEGIN
-	[00000..257FC]  :   01;
-	[257FD..4AFFF]  :   00;
+	000  :   571A00;
+	[001..0FF]  :   000000;
 END;
