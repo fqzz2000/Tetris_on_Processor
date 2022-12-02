@@ -1,15 +1,17 @@
 module vga_controller(iRST_n,
                       iVGA_CLK,
+							 grid_data, // grid data
                       oBLANK_n,
                       oHS,
                       oVS,
                       b_data,
                       g_data,
-                      r_data);
-
+                      r_data,
+							 ); 
 	
 input iRST_n;
 input iVGA_CLK;
+input [1999:0] grid_data;
 output reg oBLANK_n;
 output reg oHS;
 output reg oVS;
@@ -72,12 +74,23 @@ img_index	img_index_inst (
 	.q ( bgr_data_raw)
 	);	
 //////
-
+always@(posedge VGA_CLK_n)
+begin
+	if (grid_data == 2000'h8)
+	begin
+	bgr_data = 24'h00ffff;
+	end
+	else 
+	begin
+	bgr_data = bgr_data_raw;
+	end
+end
 
 //////latch valid data at falling edge;
-assign b_data = bgr_data_raw[23:16];
-assign g_data = bgr_data_raw[15:8];
-assign r_data = bgr_data_raw[7:0]; 
+assign b_data = bgr_data[23:16];
+assign g_data = bgr_data[15:8];
+assign r_data = bgr_data[7:0]; 
+
 ///////////////////
 //////Delay the iHD, iVD,iDEN for one clock cycle;
 always@(negedge iVGA_CLK)

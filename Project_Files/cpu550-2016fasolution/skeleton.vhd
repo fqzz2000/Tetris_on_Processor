@@ -34,7 +34,8 @@ ARCHITECTURE Structure OF skeleton IS
 		PORT (	clock, reset	: IN STD_LOGIC;
 				keyboard_in	: IN STD_LOGIC_VECTOR(31 downto 0);
 				keyboard_ack, lcd_write	: OUT STD_LOGIC;
-				lcd_data	: OUT STD_LOGIC_VECTOR(31 downto 0) );
+				lcd_data	: OUT STD_LOGIC_VECTOR(31 downto 0);
+				out_data : OUT STD_LOGIC_VECTOR(1999 DOWNTO 0));
 	END COMPONENT;
 	COMPONENT pll IS
 		PORT (	inclk0	: IN STD_LOGIC;
@@ -73,6 +74,7 @@ ARCHITECTURE Structure OF skeleton IS
 	SIGNAL VGA_CTRL_CLK : STD_LOGIC;
 	SIGNAL AUD_CTRL_CLK : STD_LOGIC;
 	SIGNAL VGA_CLK_FOR_CTRL : STD_LOGIC;
+	SIGNAL VGA_BUFFER : STD_LOGIC_VECTOR(1999 DOWNTO 0);
 	-- END SECTION --
 BEGIN
 	--clock divider
@@ -81,7 +83,7 @@ BEGIN
 
 	-- your processor
 	reset <= NOT resetn;
-	myprocessor: processor PORT MAP (clock, reset, ps2_ascii, ps2_acknowledge, lcd_write_en, lcd_write_data);
+	myprocessor: processor PORT MAP (clock, reset, ps2_ascii, ps2_acknowledge, lcd_write_en, lcd_write_data, VGA_BUFFER);
 
 	-- keyboard controller
 	myps2:	ps2 PORT MAP (clock, reset, ps2_acknowledge, ps2_clock, ps2_data, ps2_ascii(8 DOWNTO 0));
@@ -93,7 +95,7 @@ BEGIN
 	-- some LEDs that you could use for debugging if you wanted
 	leds <= "00101010";
 	
-	-- add by Quanzhi --
+	-- added by Quanzhi --
 	NDLY_RST <= NOT DLY_RST;
 	VGA_CLK <= VGA_CLK_FOR_CTRL;
 	r0:		Reset_Delay PORT MAP (inclock, DLY_RST);
