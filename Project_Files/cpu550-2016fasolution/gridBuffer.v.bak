@@ -1,0 +1,20 @@
+module gridBuffer(clock, 	// clock of the buffer
+						reset,
+						address,	// address of the write
+						data，   // data of write
+						wren,		// write enable
+						out);		// data out
+input clock, wren, reset;
+input [11:0] address;
+input [2:0] data;
+output reg [1999:0] out;
+
+always@(posedge clock)
+begin
+	if (reset == 1'b1)
+	begin
+		out <= 2000'b0;
+	end
+end			
+						
+endmodule;
