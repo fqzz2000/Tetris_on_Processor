@@ -78,11 +78,11 @@ always@(posedge VGA_CLK_n)
 begin
 	if (grid_data == 2000'h8)
 	begin
-	bgr_data = 24'h00ffff;
+	bgr_data <= 24'h00ffff;
 	end
 	else 
 	begin
-	bgr_data = bgr_data_raw;
+	bgr_data <= bgr_data_raw;
 	end
 end
 

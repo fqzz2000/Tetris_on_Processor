@@ -1,5 +1,5 @@
 EDA Netlist Writer report for skeleton
-Fri Dec 02 02:13:54 2022
+Fri Dec 02 16:56:36 2022
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Dec 02 02:13:54 2022 ;
+; EDA Netlist Writer Status ; Successful - Fri Dec 02 16:56:36 2022 ;
 ; Revision Name             ; skeleton                              ;
 ; Top-level Entity Name     ; skeleton                              ;
 ; Family                    ; Cyclone IV E                          ;
@@ -88,7 +88,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Dec 02 02:13:51 2022
+    Info: Processing started: Fri Dec 02 16:56:33 2022
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off cpu5502016fa -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file skeleton_7_1200mv_85c_slow.vho in folder "D:/DKU/ECE550/Project/Project4/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/simulation/modelsim/" for EDA simulation tool
@@ -100,9 +100,9 @@ Info (204019): Generated file skeleton_7_1200mv_0c_vhd_slow.sdo in folder "D:/DK
 Info (204019): Generated file skeleton_min_1200mv_0c_vhd_fast.sdo in folder "D:/DKU/ECE550/Project/Project4/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file skeleton_vhd.sdo in folder "D:/DKU/ECE550/Project/Project4/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4720 megabytes
-    Info: Processing ended: Fri Dec 02 02:13:54 2022
+    Info: Peak virtual memory: 4688 megabytes
+    Info: Processing ended: Fri Dec 02 16:56:36 2022
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 

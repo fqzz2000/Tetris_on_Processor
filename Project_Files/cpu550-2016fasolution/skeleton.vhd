@@ -58,6 +58,7 @@ ARCHITECTURE Structure OF skeleton IS
 	COMPONENT vga_controller IS
 		PORT (	iRST_n : IN STD_LOGIC;
 				iVGA_CLK : IN STD_LOGIC;
+				grid_data : IN STD_LOGIC_VECTOR(1999 DOWNTO 0);
 				oBLANK_n : OUT STD_LOGIC;
 				oHS : OUT STD_LOGIC;
 				oVS : OUT STD_LOGIC;
@@ -100,6 +101,6 @@ BEGIN
 	VGA_CLK <= VGA_CLK_FOR_CTRL;
 	r0:		Reset_Delay PORT MAP (inclock, DLY_RST);
 	p1:		VGA_Audio_PLL PORT MAP (NDLY_RST, inclock, VGA_CTRL_CLK, AUD_CTRL_CLK, VGA_CLK_FOR_CTRL);
-	vga_ins: vga_controller PORT MAP (DLY_RST, VGA_CLK_FOR_CTRL, VGA_BLANK, VGA_HS, VGA_VS, VGA_B, VGA_G, VGA_R);
+	vga_ins: vga_controller PORT MAP (DLY_RST, VGA_CLK_FOR_CTRL, VGA_BUFFER, VGA_BLANK, VGA_HS, VGA_VS, VGA_B, VGA_G, VGA_R);
 	-- end section --
 END Structure;
