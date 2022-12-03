@@ -1,5 +1,5 @@
 Analysis & Synthesis report for skeleton
-Fri Dec 02 20:36:10 2022
+Sat Dec 03 16:24:37 2022
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -131,37 +131,39 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 123. Parameter Settings for User Entity Instance: vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component
 124. Parameter Settings for User Entity Instance: vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component
 125. Parameter Settings for Inferred Entity Instance: ps2:myps2|altsyncram:fifo_rtl_0
-126. altpll Parameter Settings by Entity Instance
-127. altsyncram Parameter Settings by Entity Instance
-128. Port Connectivity Checks: "VGA_Audio_PLL:p1"
-129. Port Connectivity Checks: "processor:myprocessor|adder_rc:execute08"
-130. Port Connectivity Checks: "processor:myprocessor|mux:execute04"
-131. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:RNxxxx"
-132. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:RxNxxx"
-133. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:RxxNxx"
-134. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:RxxxNx"
-135. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:RxxxxN"
-136. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LNxxxx"
-137. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LxNxxx"
-138. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LxxNxx"
-139. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LxxxNx"
-140. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LxxxxN"
-141. Port Connectivity Checks: "processor:myprocessor|alu:execute02|adder_cs:adder_inst|adder_rc:upper1"
-142. Port Connectivity Checks: "processor:myprocessor|alu:execute02|adder_cs:adder_inst|adder_rc:upper0"
-143. Port Connectivity Checks: "processor:myprocessor|alu:execute02|adder_cs:adder_inst|adder_rc:lower"
-144. Port Connectivity Checks: "processor:myprocessor|alu:execute02|adder_cs:adder_inst"
-145. Port Connectivity Checks: "processor:myprocessor|regfile:decode7|decoder5to32:writeDecode"
-146. Port Connectivity Checks: "processor:myprocessor|mux:decode5"
-147. Port Connectivity Checks: "processor:myprocessor|mux:decode3"
-148. Port Connectivity Checks: "processor:myprocessor|mux:decode2"
-149. Port Connectivity Checks: "processor:myprocessor|adder_rc:fetch4"
-150. Port Connectivity Checks: "processor:myprocessor|imem:fetch3"
-151. Port Connectivity Checks: "processor:myprocessor|reg:fetch2"
-152. Port Connectivity Checks: "processor:myprocessor|mux:fetch1"
-153. Port Connectivity Checks: "processor:myprocessor"
-154. Post-Synthesis Netlist Statistics for Top Partition
-155. Elapsed Time Per Partition
-156. Analysis & Synthesis Messages
+126. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Div0
+127. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Mod0
+128. altpll Parameter Settings by Entity Instance
+129. altsyncram Parameter Settings by Entity Instance
+130. Port Connectivity Checks: "VGA_Audio_PLL:p1"
+131. Port Connectivity Checks: "processor:myprocessor|adder_rc:execute08"
+132. Port Connectivity Checks: "processor:myprocessor|mux:execute04"
+133. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:RNxxxx"
+134. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:RxNxxx"
+135. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:RxxNxx"
+136. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:RxxxNx"
+137. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:RxxxxN"
+138. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LNxxxx"
+139. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LxNxxx"
+140. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LxxNxx"
+141. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LxxxNx"
+142. Port Connectivity Checks: "processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LxxxxN"
+143. Port Connectivity Checks: "processor:myprocessor|alu:execute02|adder_cs:adder_inst|adder_rc:upper1"
+144. Port Connectivity Checks: "processor:myprocessor|alu:execute02|adder_cs:adder_inst|adder_rc:upper0"
+145. Port Connectivity Checks: "processor:myprocessor|alu:execute02|adder_cs:adder_inst|adder_rc:lower"
+146. Port Connectivity Checks: "processor:myprocessor|alu:execute02|adder_cs:adder_inst"
+147. Port Connectivity Checks: "processor:myprocessor|regfile:decode7|decoder5to32:writeDecode"
+148. Port Connectivity Checks: "processor:myprocessor|mux:decode5"
+149. Port Connectivity Checks: "processor:myprocessor|mux:decode3"
+150. Port Connectivity Checks: "processor:myprocessor|mux:decode2"
+151. Port Connectivity Checks: "processor:myprocessor|adder_rc:fetch4"
+152. Port Connectivity Checks: "processor:myprocessor|imem:fetch3"
+153. Port Connectivity Checks: "processor:myprocessor|reg:fetch2"
+154. Port Connectivity Checks: "processor:myprocessor|mux:fetch1"
+155. Port Connectivity Checks: "processor:myprocessor"
+156. Post-Synthesis Netlist Statistics for Top Partition
+157. Elapsed Time Per Partition
+158. Analysis & Synthesis Messages
 
 
 
@@ -187,15 +189,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 02 20:36:10 2022       ;
+; Analysis & Synthesis Status        ; Successful - Sat Dec 03 16:24:37 2022       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 4,190                                       ;
-;     Total combinational functions  ; 3,079                                       ;
-;     Dedicated logic registers      ; 1,426                                       ;
-; Total registers                    ; 1426                                        ;
+; Total logic elements               ; 4,523                                       ;
+;     Total combinational functions  ; 3,405                                       ;
+;     Dedicated logic registers      ; 1,446                                       ;
+; Total registers                    ; 1446                                        ;
 ; Total pins                         ; 54                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 2,726,112                                   ;
@@ -303,9 +305,9 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
 ;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
 ;     Processor 7            ;   0.0%      ;
@@ -314,62 +316,71 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                        ;
-+----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                                                                           ; Library ;
-+----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
-; img_index.mif                    ; yes             ; User Memory Initialization File       ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/img_index.mif           ;         ;
-; img_data.mif                     ; yes             ; User Memory Initialization File       ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/img_data.mif            ;         ;
-; img_index.v                      ; yes             ; User Wizard-Generated File            ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/img_index.v             ;         ;
-; img_data.v                       ; yes             ; User Wizard-Generated File            ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/img_data.v              ;         ;
-; video_sync_generator.v           ; yes             ; User Verilog HDL File                 ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/video_sync_generator.v  ;         ;
-; vga_controller.v                 ; yes             ; User Verilog HDL File                 ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v        ;         ;
-; VGA_Audio_PLL.v                  ; yes             ; User Wizard-Generated File            ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/VGA_Audio_PLL.v         ;         ;
-; Reset_Delay.v                    ; yes             ; User Verilog HDL File                 ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/Reset_Delay.v           ;         ;
-; test-fibonacci-imem.hex          ; yes             ; User Hexadecimal (Intel-Format) File  ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/test-fibonacci-imem.hex ;         ;
-; test-fibonacci-dmem.hex          ; yes             ; User Hexadecimal (Intel-Format) File  ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/test-fibonacci-dmem.hex ;         ;
-; control.vhd                      ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/control.vhd             ;         ;
-; alu.vhd                          ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/alu.vhd                 ;         ;
-; decoder5to32.vhd                 ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/decoder5to32.vhd        ;         ;
-; dmem.vhd                         ; yes             ; User Wizard-Generated File            ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/dmem.vhd                ;         ;
-; imem.vhd                         ; yes             ; User Wizard-Generated File            ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/imem.vhd                ;         ;
-; lcd.vhd                          ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/lcd.vhd                 ;         ;
-; processor.vhd                    ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/processor.vhd           ;         ;
-; ps2.vhd                          ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/ps2.vhd                 ;         ;
-; skeleton.vhd                     ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/skeleton.vhd            ;         ;
-; regfile.vhd                      ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/regfile.vhd             ;         ;
-; shifter.vhd                      ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/shifter.vhd             ;         ;
-; pll.vhd                          ; yes             ; User Wizard-Generated File            ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/pll.vhd                 ;         ;
-; adder_rc.vhd                     ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/adder_rc.vhd            ;         ;
-; adder_cs.vhd                     ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/adder_cs.vhd            ;         ;
-; mux.vhd                          ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/mux.vhd                 ;         ;
-; reg.vhd                          ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/reg.vhd                 ;         ;
-; reg_2port.vhd                    ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/reg_2port.vhd           ;         ;
-; reg0_2port.vhd                   ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/reg0_2port.vhd          ;         ;
-; gridBuffer.v                     ; yes             ; User Verilog HDL File                 ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/gridBuffer.v            ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/altpll.tdf                                                  ;         ;
-; aglobal180.inc                   ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/aglobal180.inc                                              ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/stratix_pll.inc                                             ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/stratixii_pll.inc                                           ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/cycloneii_pll.inc                                           ;         ;
-; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/pll_altpll.v         ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/altsyncram.tdf                                              ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/stratix_ram_block.inc                                       ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/lpm_mux.inc                                                 ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/lpm_decode.inc                                              ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/a_rdenreg.inc                                               ;         ;
-; altrom.inc                       ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/altrom.inc                                                  ;         ;
-; altram.inc                       ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/altram.inc                                                  ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/altdpram.inc                                                ;         ;
-; db/altsyncram_0tr3.tdf           ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/altsyncram_0tr3.tdf  ;         ;
-; db/altsyncram_37t3.tdf           ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/altsyncram_37t3.tdf  ;         ;
-; db/altsyncram_96c1.tdf           ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/altsyncram_96c1.tdf  ;         ;
-; db/decode_aaa.tdf                ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/decode_aaa.tdf       ;         ;
-; db/mux_1pb.tdf                   ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/mux_1pb.tdf          ;         ;
-; db/altsyncram_k5c1.tdf           ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/altsyncram_k5c1.tdf  ;         ;
-; db/altsyncram_q9c1.tdf           ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/altsyncram_q9c1.tdf  ;         ;
-+----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                           ;
++----------------------------------+-----------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                                                                              ; Library ;
++----------------------------------+-----------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
+; img_index.mif                    ; yes             ; User Memory Initialization File       ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/img_index.mif              ;         ;
+; img_data.mif                     ; yes             ; User Memory Initialization File       ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/img_data.mif               ;         ;
+; img_index.v                      ; yes             ; User Wizard-Generated File            ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/img_index.v                ;         ;
+; img_data.v                       ; yes             ; User Wizard-Generated File            ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/img_data.v                 ;         ;
+; video_sync_generator.v           ; yes             ; User Verilog HDL File                 ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/video_sync_generator.v     ;         ;
+; vga_controller.v                 ; yes             ; User Verilog HDL File                 ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v           ;         ;
+; VGA_Audio_PLL.v                  ; yes             ; User Wizard-Generated File            ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/VGA_Audio_PLL.v            ;         ;
+; Reset_Delay.v                    ; yes             ; User Verilog HDL File                 ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/Reset_Delay.v              ;         ;
+; test-fibonacci-imem.hex          ; yes             ; User Hexadecimal (Intel-Format) File  ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/test-fibonacci-imem.hex    ;         ;
+; test-fibonacci-dmem.hex          ; yes             ; User Hexadecimal (Intel-Format) File  ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/test-fibonacci-dmem.hex    ;         ;
+; control.vhd                      ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/control.vhd                ;         ;
+; alu.vhd                          ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/alu.vhd                    ;         ;
+; decoder5to32.vhd                 ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/decoder5to32.vhd           ;         ;
+; dmem.vhd                         ; yes             ; User Wizard-Generated File            ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/dmem.vhd                   ;         ;
+; imem.vhd                         ; yes             ; User Wizard-Generated File            ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/imem.vhd                   ;         ;
+; lcd.vhd                          ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/lcd.vhd                    ;         ;
+; processor.vhd                    ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/processor.vhd              ;         ;
+; ps2.vhd                          ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/ps2.vhd                    ;         ;
+; skeleton.vhd                     ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/skeleton.vhd               ;         ;
+; regfile.vhd                      ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/regfile.vhd                ;         ;
+; shifter.vhd                      ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/shifter.vhd                ;         ;
+; pll.vhd                          ; yes             ; User Wizard-Generated File            ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/pll.vhd                    ;         ;
+; adder_rc.vhd                     ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/adder_rc.vhd               ;         ;
+; adder_cs.vhd                     ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/adder_cs.vhd               ;         ;
+; mux.vhd                          ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/mux.vhd                    ;         ;
+; reg.vhd                          ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/reg.vhd                    ;         ;
+; reg_2port.vhd                    ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/reg_2port.vhd              ;         ;
+; reg0_2port.vhd                   ; yes             ; User VHDL File                        ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/reg0_2port.vhd             ;         ;
+; gridBuffer.v                     ; yes             ; User Verilog HDL File                 ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/gridBuffer.v               ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/altpll.tdf                                                     ;         ;
+; aglobal180.inc                   ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/aglobal180.inc                                                 ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/stratix_pll.inc                                                ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/stratixii_pll.inc                                              ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/cycloneii_pll.inc                                              ;         ;
+; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/pll_altpll.v            ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/altsyncram.tdf                                                 ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/stratix_ram_block.inc                                          ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/lpm_mux.inc                                                    ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/lpm_decode.inc                                                 ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/a_rdenreg.inc                                                  ;         ;
+; altrom.inc                       ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/altrom.inc                                                     ;         ;
+; altram.inc                       ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/altram.inc                                                     ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/altdpram.inc                                                   ;         ;
+; db/altsyncram_0tr3.tdf           ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/altsyncram_0tr3.tdf     ;         ;
+; db/altsyncram_37t3.tdf           ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/altsyncram_37t3.tdf     ;         ;
+; db/altsyncram_96c1.tdf           ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/altsyncram_96c1.tdf     ;         ;
+; db/decode_aaa.tdf                ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/decode_aaa.tdf          ;         ;
+; db/mux_1pb.tdf                   ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/mux_1pb.tdf             ;         ;
+; db/altsyncram_k5c1.tdf           ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/altsyncram_k5c1.tdf     ;         ;
+; db/altsyncram_q9c1.tdf           ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/altsyncram_q9c1.tdf     ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/lpm_divide.tdf                                                 ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/abs_divider.inc                                                ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                          ; d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/sign_div_unsign.inc                                            ;         ;
+; db/lpm_divide_ikm.tdf            ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/lpm_divide_ikm.tdf      ;         ;
+; db/sign_div_unsign_anh.tdf       ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/sign_div_unsign_anh.tdf ;         ;
+; db/alt_u_div_8af.tdf             ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/alt_u_div_8af.tdf       ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/add_sub_7pc.tdf         ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/add_sub_8pc.tdf         ;         ;
+; db/lpm_divide_lcm.tdf            ; yes             ; Auto-Generated Megafunction           ; D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/lpm_divide_lcm.tdf      ;         ;
++----------------------------------+-----------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -377,20 +388,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                      ;
 +---------------------------------------------+----------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 4,190                                                                      ;
+; Estimated Total logic elements              ; 4,523                                                                      ;
 ;                                             ;                                                                            ;
-; Total combinational functions               ; 3079                                                                       ;
+; Total combinational functions               ; 3405                                                                       ;
 ; Logic element usage by number of LUT inputs ;                                                                            ;
-;     -- 4 input functions                    ; 2525                                                                       ;
-;     -- 3 input functions                    ; 311                                                                        ;
-;     -- <=2 input functions                  ; 243                                                                        ;
+;     -- 4 input functions                    ; 2596                                                                       ;
+;     -- 3 input functions                    ; 394                                                                        ;
+;     -- <=2 input functions                  ; 415                                                                        ;
 ;                                             ;                                                                            ;
 ; Logic elements by mode                      ;                                                                            ;
-;     -- normal mode                          ; 2981                                                                       ;
-;     -- arithmetic mode                      ; 98                                                                         ;
+;     -- normal mode                          ; 3229                                                                       ;
+;     -- arithmetic mode                      ; 176                                                                        ;
 ;                                             ;                                                                            ;
-; Total registers                             ; 1426                                                                       ;
-;     -- Dedicated logic registers            ; 1426                                                                       ;
+; Total registers                             ; 1446                                                                       ;
+;     -- Dedicated logic registers            ; 1446                                                                       ;
 ;     -- I/O registers                        ; 0                                                                          ;
 ;                                             ;                                                                            ;
 ; I/O pins                                    ; 54                                                                         ;
@@ -403,8 +414,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                                                                            ;
 ; Maximum fan-out node                        ; pll:div|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ;
 ; Maximum fan-out                             ; 1425                                                                       ;
-; Total fan-out                               ; 22943                                                                      ;
-; Average fan-out                             ; 4.58                                                                       ;
+; Total fan-out                               ; 23811                                                                      ;
+; Average fan-out                             ; 4.44                                                                       ;
 +---------------------------------------------+----------------------------------------------------------------------------+
 
 
@@ -413,7 +424,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                           ; Entity Name          ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |skeleton                                    ; 3079 (0)            ; 1426 (0)                  ; 2726112     ; 0            ; 0       ; 0         ; 54   ; 0            ; |skeleton                                                                                                                                     ; skeleton             ; work         ;
+; |skeleton                                    ; 3405 (0)            ; 1446 (0)                  ; 2726112     ; 0            ; 0       ; 0         ; 54   ; 0            ; |skeleton                                                                                                                                     ; skeleton             ; work         ;
 ;    |Reset_Delay:r0|                          ; 27 (27)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Reset_Delay:r0                                                                                                                      ; Reset_Delay          ; work         ;
 ;    |VGA_Audio_PLL:p1|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1                                                                                                                    ; VGA_Audio_PLL        ; work         ;
 ;       |altpll:altpll_component|              ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1|altpll:altpll_component                                                                                            ; altpll               ; work         ;
@@ -421,18 +432,18 @@ refer to the applicable agreement for further details.
 ;    |pll:div|                                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|pll:div                                                                                                                             ; pll                  ; work         ;
 ;       |altpll:altpll_component|              ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|pll:div|altpll:altpll_component                                                                                                     ; altpll               ; work         ;
 ;          |pll_altpll:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|pll:div|altpll:altpll_component|pll_altpll:auto_generated                                                                           ; pll_altpll           ; work         ;
-;    |processor:myprocessor|                   ; 2173 (25)           ; 1004 (0)                  ; 262144      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor                                                                                                               ; processor            ; work         ;
+;    |processor:myprocessor|                   ; 2168 (25)           ; 1004 (0)                  ; 262144      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor                                                                                                               ; processor            ; work         ;
 ;       |adder_rc:execute08|                   ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|adder_rc:execute08                                                                                            ; adder_rc             ; work         ;
 ;       |adder_rc:fetch4|                      ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|adder_rc:fetch4                                                                                               ; adder_rc             ; work         ;
-;       |alu:execute02|                        ; 537 (226)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02                                                                                                 ; alu                  ; work         ;
-;          |adder_cs:adder_inst|               ; 83 (2)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|adder_cs:adder_inst                                                                             ; adder_cs             ; work         ;
-;             |adder_rc:lower|                 ; 27 (27)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|adder_cs:adder_inst|adder_rc:lower                                                              ; adder_rc             ; work         ;
+;       |alu:execute02|                        ; 534 (216)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02                                                                                                 ; alu                  ; work         ;
+;          |adder_cs:adder_inst|               ; 88 (2)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|adder_cs:adder_inst                                                                             ; adder_cs             ; work         ;
+;             |adder_rc:lower|                 ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|adder_cs:adder_inst|adder_rc:lower                                                              ; adder_rc             ; work         ;
 ;             |adder_rc:upper0|                ; 27 (27)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|adder_cs:adder_inst|adder_rc:upper0                                                             ; adder_rc             ; work         ;
 ;             |adder_rc:upper1|                ; 26 (26)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|adder_cs:adder_inst|adder_rc:upper1                                                             ; adder_rc             ; work         ;
 ;             |mux:upper|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|adder_cs:adder_inst|mux:upper                                                                   ; mux                  ; work         ;
-;          |shifter:shifter_inst|              ; 228 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|shifter:shifter_inst                                                                            ; shifter              ; work         ;
+;          |shifter:shifter_inst|              ; 230 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|shifter:shifter_inst                                                                            ; shifter              ; work         ;
 ;             |mux:LNxxxx|                     ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LNxxxx                                                                 ; mux                  ; work         ;
-;             |mux:LxNxxx|                     ; 23 (23)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LxNxxx                                                                 ; mux                  ; work         ;
+;             |mux:LxNxxx|                     ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LxNxxx                                                                 ; mux                  ; work         ;
 ;             |mux:LxxNxx|                     ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LxxNxx                                                                 ; mux                  ; work         ;
 ;             |mux:LxxxNx|                     ; 60 (60)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LxxxNx                                                                 ; mux                  ; work         ;
 ;             |mux:LxxxxN|                     ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:LxxxxN                                                                 ; mux                  ; work         ;
@@ -441,7 +452,7 @@ refer to the applicable agreement for further details.
 ;             |mux:RxxNxx|                     ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:RxxNxx                                                                 ; mux                  ; work         ;
 ;             |mux:RxxxNx|                     ; 59 (59)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:RxxxNx                                                                 ; mux                  ; work         ;
 ;             |mux:RxxxxN|                     ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|alu:execute02|shifter:shifter_inst|mux:RxxxxN                                                                 ; mux                  ; work         ;
-;       |control:decode1|                      ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|control:decode1                                                                                               ; control              ; work         ;
+;       |control:decode1|                      ; 22 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|control:decode1                                                                                               ; control              ; work         ;
 ;       |dmem:memory1|                         ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|dmem:memory1                                                                                                  ; dmem                 ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|dmem:memory1|altsyncram:altsyncram_component                                                                  ; altsyncram           ; work         ;
 ;             |altsyncram_37t3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|dmem:memory1|altsyncram:altsyncram_component|altsyncram_37t3:auto_generated                                   ; altsyncram_37t3      ; work         ;
@@ -450,12 +461,12 @@ refer to the applicable agreement for further details.
 ;             |altsyncram_0tr3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|imem:fetch3|altsyncram:altsyncram_component|altsyncram_0tr3:auto_generated                                    ; altsyncram_0tr3      ; work         ;
 ;       |mux:decode4|                          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|mux:decode4                                                                                                   ; mux                  ; work         ;
 ;       |mux:decode6|                          ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|mux:decode6                                                                                                   ; mux                  ; work         ;
-;       |mux:execute01|                        ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|mux:execute01                                                                                                 ; mux                  ; work         ;
+;       |mux:execute01|                        ; 33 (33)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|mux:execute01                                                                                                 ; mux                  ; work         ;
 ;       |mux:execute11|                        ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|mux:execute11                                                                                                 ; mux                  ; work         ;
 ;       |mux:fetch1|                           ; 23 (23)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|mux:fetch1                                                                                                    ; mux                  ; work         ;
 ;       |mux:writeback1|                       ; 93 (93)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|mux:writeback1                                                                                                ; mux                  ; work         ;
 ;       |reg:fetch2|                           ; 0 (0)               ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|reg:fetch2                                                                                                    ; reg                  ; work         ;
-;       |regfile:decode7|                      ; 1380 (1378)         ; 992 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|regfile:decode7                                                                                               ; regfile              ; work         ;
+;       |regfile:decode7|                      ; 1381 (1379)         ; 992 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|regfile:decode7                                                                                               ; regfile              ; work         ;
 ;          |decoder5to32:writeDecode|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|regfile:decode7|decoder5to32:writeDecode                                                                      ; decoder5to32         ; work         ;
 ;          |reg_2port:\regs:10:reg_array|      ; 0 (0)               ; 32 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|regfile:decode7|reg_2port:\regs:10:reg_array                                                                  ; reg_2port            ; work         ;
 ;             |reg:r|                          ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:myprocessor|regfile:decode7|reg_2port:\regs:10:reg_array|reg:r                                                            ; reg                  ; work         ;
@@ -522,7 +533,7 @@ refer to the applicable agreement for further details.
 ;    |ps2:myps2|                               ; 134 (134)           ; 67 (67)                   ; 224         ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|ps2:myps2                                                                                                                           ; ps2                  ; work         ;
 ;       |altsyncram:fifo_rtl_0|                ; 0 (0)               ; 0 (0)                     ; 224         ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|ps2:myps2|altsyncram:fifo_rtl_0                                                                                                     ; altsyncram           ; work         ;
 ;          |altsyncram_q9c1:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 224         ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|ps2:myps2|altsyncram:fifo_rtl_0|altsyncram_q9c1:auto_generated                                                                      ; altsyncram_q9c1      ; work         ;
-;    |vga_controller:vga_ins|                  ; 342 (20)            ; 52 (22)                   ; 2463744     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins                                                                                                              ; vga_controller       ; work         ;
+;    |vga_controller:vga_ins|                  ; 673 (34)            ; 72 (42)                   ; 2463744     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins                                                                                                              ; vga_controller       ; work         ;
 ;       |img_data:img_data_inst|               ; 278 (0)             ; 6 (0)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst                                                                                       ; img_data             ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 278 (0)             ; 6 (0)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component                                                       ; altsyncram           ; work         ;
 ;             |altsyncram_96c1:auto_generated| ; 278 (0)             ; 6 (6)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_96c1:auto_generated                        ; altsyncram_96c1      ; work         ;
@@ -531,6 +542,15 @@ refer to the applicable agreement for further details.
 ;       |img_index:img_index_inst|             ; 0 (0)               ; 0 (0)                     ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_index:img_index_inst                                                                                     ; img_index            ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component                                                     ; altsyncram           ; work         ;
 ;             |altsyncram_k5c1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_k5c1:auto_generated                      ; altsyncram_k5c1      ; work         ;
+;       |lpm_divide:Div0|                      ; 116 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Div0                                                                                              ; lpm_divide           ; work         ;
+;          |lpm_divide_ikm:auto_generated|     ; 116 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Div0|lpm_divide_ikm:auto_generated                                                                ; lpm_divide_ikm       ; work         ;
+;             |sign_div_unsign_anh:divider|    ; 116 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_anh:divider                                    ; sign_div_unsign_anh  ; work         ;
+;                |alt_u_div_8af:divider|       ; 116 (116)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_anh:divider|alt_u_div_8af:divider              ; alt_u_div_8af        ; work         ;
+;       |lpm_divide:Mod0|                      ; 124 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0                                                                                              ; lpm_divide           ; work         ;
+;          |lpm_divide_lcm:auto_generated|     ; 124 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_lcm:auto_generated                                                                ; lpm_divide_lcm       ; work         ;
+;             |sign_div_unsign_anh:divider|    ; 124 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_lcm:auto_generated|sign_div_unsign_anh:divider                                    ; sign_div_unsign_anh  ; work         ;
+;                |alt_u_div_8af:divider|       ; 124 (124)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_lcm:auto_generated|sign_div_unsign_anh:divider|alt_u_div_8af:divider              ; alt_u_div_8af        ; work         ;
+;       |score_printer:score_ind|              ; 77 (77)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|score_printer:score_ind                                                                                      ; score_printer        ; work         ;
 ;       |video_sync_generator:LTM_ins|         ; 44 (44)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|video_sync_generator:LTM_ins                                                                                 ; video_sync_generator ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -589,6 +609,11 @@ Encoding Type:  One-Hot
 +----------------------------------------+----------------------------------------+
 ; Register name                          ; Reason for Removal                     ;
 +----------------------------------------+----------------------------------------+
+; vga_controller:vga_ins|score[0..2]     ; Stuck at GND due to stuck port data_in ;
+; vga_controller:vga_ins|score[3..6]     ; Stuck at VCC due to stuck port data_in ;
+; vga_controller:vga_ins|score[7]        ; Stuck at GND due to stuck port data_in ;
+; vga_controller:vga_ins|score[8,9]      ; Stuck at VCC due to stuck port data_in ;
+; vga_controller:vga_ins|bgX[10]         ; Stuck at GND due to stuck port data_in ;
 ; lcd:mylcd|line2[10][7]                 ; Stuck at GND due to stuck port data_in ;
 ; lcd:mylcd|line2[11][7]                 ; Stuck at GND due to stuck port data_in ;
 ; lcd:mylcd|line2[8][7]                  ; Stuck at GND due to stuck port data_in ;
@@ -621,7 +646,8 @@ Encoding Type:  One-Hot
 ; lcd:mylcd|line1[12][7]                 ; Stuck at GND due to stuck port data_in ;
 ; lcd:mylcd|line1[15][7]                 ; Stuck at GND due to stuck port data_in ;
 ; lcd:mylcd|line1[14][7]                 ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 32 ;                                        ;
+; vga_controller:vga_ins|bgY[10]         ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 44 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
 
@@ -670,7 +696,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1426  ;
+; Total registers                              ; 1446  ;
 ; Number of registers using Synchronous Clear  ; 42    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 1373  ;
@@ -754,41 +780,41 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |skeleton|lcd:mylcd|cdone                                ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[15][0]                         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |skeleton|lcd:mylcd|mstart                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[15][4]                         ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[14][4]                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[13][2]                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[12][2]                         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[13][4]                         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[12][3]                         ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[11][2]                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[10][3]                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[9][2]                          ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[8][1]                          ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[7][3]                          ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[10][2]                         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[9][1]                          ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[8][0]                          ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[7][0]                          ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[6][6]                          ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[5][1]                          ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[4][3]                          ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[3][6]                          ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[2][7]                          ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[1][1]                          ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[0][2]                          ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|lcd:mylcd|ptr[0]                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |skeleton|ps2:myps2|size[5]                              ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[5][3]                          ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[4][2]                          ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[3][7]                          ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[2][4]                          ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[1][3]                          ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[0][7]                          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|lcd:mylcd|ptr[3]                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |skeleton|ps2:myps2|size[3]                              ;
 ; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |skeleton|ps2:myps2|fcount[1]                            ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|ps2:myps2|bcount[3]                            ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|index[5]                             ;
-; 38:1               ; 8 bits    ; 200 LEs       ; 200 LEs              ; 0 LEs                  ; Yes        ; |skeleton|lcd:mylcd|lcd_data[6]                          ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |skeleton|processor:myprocessor|mux:execute11|F[8]       ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |skeleton|processor:myprocessor|mux:writeback1|F[0]      ;
-; 10:1               ; 8 bits    ; 48 LEs        ; 40 LEs               ; 8 LEs                  ; No         ; |skeleton|processor:myprocessor|alu:execute02|R[15]      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|ps2:myps2|bcount[0]                            ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|index[3]                             ;
+; 38:1               ; 8 bits    ; 200 LEs       ; 200 LEs              ; 0 LEs                  ; Yes        ; |skeleton|lcd:mylcd|lcd_data[5]                          ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |skeleton|processor:myprocessor|mux:execute11|F[0]       ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |skeleton|processor:myprocessor|mux:writeback1|F[3]      ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 40 LEs               ; 8 LEs                  ; No         ; |skeleton|processor:myprocessor|alu:execute02|R[9]       ;
 ; 11:1               ; 4 bits    ; 28 LEs        ; 20 LEs               ; 8 LEs                  ; No         ; |skeleton|processor:myprocessor|alu:execute02|R[7]       ;
-; 10:1               ; 7 bits    ; 42 LEs        ; 35 LEs               ; 7 LEs                  ; No         ; |skeleton|processor:myprocessor|alu:execute02|R[18]      ;
+; 10:1               ; 7 bits    ; 42 LEs        ; 35 LEs               ; 7 LEs                  ; No         ; |skeleton|processor:myprocessor|alu:execute02|R[23]      ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |skeleton|lcd:mylcd|state1                               ;
 ; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |skeleton|processor:myprocessor|alu:execute02|R[2]       ;
-; 11:1               ; 4 bits    ; 28 LEs        ; 24 LEs               ; 4 LEs                  ; No         ; |skeleton|processor:myprocessor|alu:execute02|R[24]      ;
-; 512:1              ; 32 bits   ; 10912 LEs     ; 640 LEs              ; 10272 LEs              ; No         ; |skeleton|processor:myprocessor|regfile:decode7|valB[17] ;
+; 11:1               ; 4 bits    ; 28 LEs        ; 24 LEs               ; 4 LEs                  ; No         ; |skeleton|processor:myprocessor|alu:execute02|R[27]      ;
+; 512:1              ; 32 bits   ; 10912 LEs     ; 640 LEs              ; 10272 LEs              ; No         ; |skeleton|processor:myprocessor|regfile:decode7|valB[31] ;
 ; 36:1               ; 32 bits   ; 768 LEs       ; 672 LEs              ; 96 LEs                 ; No         ; |skeleton|processor:myprocessor|regfile:decode7|valA[12] ;
 ; 13:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; No         ; |skeleton|processor:myprocessor|alu:execute02|R[1]       ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; No         ; |skeleton|processor:myprocessor|alu:execute02|R[28]      ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; No         ; |skeleton|processor:myprocessor|alu:execute02|R[29]      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 
 
@@ -2857,6 +2883,52 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Div0 ;
++------------------------+----------------+-----------------------------------------------+
+; Parameter Name         ; Value          ; Type                                          ;
++------------------------+----------------+-----------------------------------------------+
+; LPM_WIDTHN             ; 19             ; Untyped                                       ;
+; LPM_WIDTHD             ; 10             ; Untyped                                       ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
+; LPM_PIPELINE           ; 0              ; Untyped                                       ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                       ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                       ;
+; CBXI_PARAMETER         ; lpm_divide_ikm ; Untyped                                       ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                       ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                       ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                  ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                ;
++------------------------+----------------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Mod0 ;
++------------------------+----------------+-----------------------------------------------+
+; Parameter Name         ; Value          ; Type                                          ;
++------------------------+----------------+-----------------------------------------------+
+; LPM_WIDTHN             ; 19             ; Untyped                                       ;
+; LPM_WIDTHD             ; 10             ; Untyped                                       ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
+; LPM_PIPELINE           ; 0              ; Untyped                                       ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                       ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                       ;
+; CBXI_PARAMETER         ; lpm_divide_lcm ; Untyped                                       ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                       ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                       ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                  ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                ;
++------------------------+----------------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------+
 ; altpll Parameter Settings by Entity Instance                             ;
 +-------------------------------+------------------------------------------+
@@ -3200,28 +3272,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 54                          ;
-; cycloneiii_ff         ; 1426                        ;
+; cycloneiii_ff         ; 1446                        ;
 ;     CLR               ; 62                          ;
 ;     CLR SCLR          ; 19                          ;
 ;     ENA               ; 26                          ;
 ;     ENA CLR           ; 1269                        ;
 ;     ENA CLR SCLR      ; 23                          ;
-;     plain             ; 27                          ;
-; cycloneiii_lcell_comb ; 3081                        ;
-;     arith             ; 98                          ;
-;         2 data inputs ; 91                          ;
-;         3 data inputs ; 7                           ;
-;     normal            ; 2983                        ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 12                          ;
-;         2 data inputs ; 140                         ;
-;         3 data inputs ; 304                         ;
-;         4 data inputs ; 2525                        ;
+;     plain             ; 47                          ;
+; cycloneiii_lcell_comb ; 3407                        ;
+;     arith             ; 176                         ;
+;         2 data inputs ; 97                          ;
+;         3 data inputs ; 79                          ;
+;     normal            ; 3231                        ;
+;         0 data inputs ; 22                          ;
+;         1 data inputs ; 21                          ;
+;         2 data inputs ; 277                         ;
+;         3 data inputs ; 315                         ;
+;         4 data inputs ; 2596                        ;
 ; cycloneiii_pll        ; 2                           ;
 ; cycloneiii_ram_block  ; 399                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 35.00                       ;
-; Average LUT depth     ; 15.65                       ;
+; Average LUT depth     ; 15.89                       ;
 +-----------------------+-----------------------------+
 
 
@@ -3230,7 +3302,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:11     ;
+; Top            ; 00:00:10     ;
 +----------------+--------------+
 
 
@@ -3240,7 +3312,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Dec 02 20:35:45 2022
+    Info: Processing started: Sat Dec 03 16:24:13 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cpu5502016fa -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -3251,8 +3323,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file img_dat
 Info (12021): Found 1 design units, including 1 entities, in source file video_sync_generator.v
     Info (12023): Found entity 1: video_sync_generator File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/video_sync_generator.v Line: 1
 Warning (10238): Verilog Module Declaration warning at vga_controller.v(10): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "vga_controller" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 10
-Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.v
+Info (12021): Found 2 design units, including 2 entities, in source file vga_controller.v
     Info (12023): Found entity 1: vga_controller File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 1
+    Info (12023): Found entity 2: score_printer File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 98
 Info (12021): Found 1 design units, including 1 entities, in source file vga_audio_pll.v
     Info (12023): Found entity 1: VGA_Audio_PLL File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/VGA_Audio_PLL.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file reset_delay.v
@@ -3580,14 +3653,13 @@ Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_componen
     Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
 Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:vga_ins" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/skeleton.vhd Line: 104
-Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(28): object "x_s" assigned a value but never read File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 28
-Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(28): object "y_s" assigned a value but never read File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 28
-Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(29): object "counter" assigned a value but never read File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 29
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(54): truncated value with size 32 to match size of target (19) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 54
-Info (12128): Elaborating entity "video_sync_generator" for hierarchy "vga_controller:vga_ins|video_sync_generator:LTM_ins" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 43
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(46): truncated value with size 32 to match size of target (19) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 46
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(75): truncated value with size 19 to match size of target (11) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 75
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(76): truncated value with size 19 to match size of target (11) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 76
+Info (12128): Elaborating entity "video_sync_generator" for hierarchy "vga_controller:vga_ins|video_sync_generator:LTM_ins" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 35
 Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(77): truncated value with size 32 to match size of target (10) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/video_sync_generator.v Line: 77
 Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(80): truncated value with size 32 to match size of target (11) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/video_sync_generator.v Line: 80
-Info (12128): Elaborating entity "img_data" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 63
+Info (12128): Elaborating entity "img_data" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 55
 Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/img_data.v Line: 81
 Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/img_data.v Line: 81
 Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" with the following parameter: File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/img_data.v Line: 81
@@ -3615,7 +3687,7 @@ Info (12128): Elaborating entity "decode_aaa" for hierarchy "vga_controller:vga_
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_1pb.tdf
     Info (12023): Found entity 1: mux_1pb File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/mux_1pb.tdf Line: 22
 Info (12128): Elaborating entity "mux_1pb" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_96c1:auto_generated|mux_1pb:mux2" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/altsyncram_96c1.tdf Line: 40
-Info (12128): Elaborating entity "img_index" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 75
+Info (12128): Elaborating entity "img_index" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 67
 Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/img_index.v Line: 82
 Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/img_index.v Line: 82
 Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" with the following parameter: File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/img_index.v Line: 82
@@ -3637,6 +3709,38 @@ Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_in
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_k5c1.tdf
     Info (12023): Found entity 1: altsyncram_k5c1 File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/altsyncram_k5c1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_k5c1" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_k5c1:auto_generated" File: d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "score_printer" for hierarchy "vga_controller:vga_ins|score_printer:score_ind" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 80
+Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(105): object "invalid_score_color" assigned a value but never read File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 105
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(111): truncated value with size 32 to match size of target (4) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(112): truncated value with size 32 to match size of target (4) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 112
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(113): truncated value with size 32 to match size of target (4) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 113
+Warning (10270): Verilog HDL Case Statement warning at vga_controller.v(140): incomplete case statement has no default case item File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 140
+Warning (10270): Verilog HDL Case Statement warning at vga_controller.v(233): incomplete case statement has no default case item File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 233
+Warning (10270): Verilog HDL Case Statement warning at vga_controller.v(326): incomplete case statement has no default case item File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 326
+Warning (10240): Verilog HDL Always Construct warning at vga_controller.v(111): inferring latch(es) for variable "numH", which holds its previous value in one or more paths through the always construct File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Warning (10240): Verilog HDL Always Construct warning at vga_controller.v(111): inferring latch(es) for variable "numT", which holds its previous value in one or more paths through the always construct File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Warning (10240): Verilog HDL Always Construct warning at vga_controller.v(111): inferring latch(es) for variable "numS", which holds its previous value in one or more paths through the always construct File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numS[0]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numS[1]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numS[2]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numS[3]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numS[4]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numS[5]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numS[6]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numT[0]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numT[1]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numT[2]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numT[3]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numT[4]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numT[5]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numT[6]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numH[0]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numH[1]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numH[2]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numH[3]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numH[4]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numH[5]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Info (10041): Inferred latch for "numH[6]" at vga_controller.v(111) File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "processor:myprocessor|regfile:decode7|valA[31]" into a selector File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/alu.vhd Line: 25
     Warning (13048): Converted tri-state node "processor:myprocessor|regfile:decode7|valA[30]" into a selector File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/alu.vhd Line: 25
@@ -3702,6 +3806,12 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "processor:myprocessor|regfile:decode7|valB[2]" into a selector File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/mux.vhd Line: 12
     Warning (13048): Converted tri-state node "processor:myprocessor|regfile:decode7|valB[1]" into a selector File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/mux.vhd Line: 12
     Warning (13048): Converted tri-state node "processor:myprocessor|regfile:decode7|valB[0]" into a selector File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/mux.vhd Line: 12
+Warning (14026): LATCH primitive "vga_controller:vga_ins|score_printer:score_ind|numH[1]" is permanently enabled File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Warning (14026): LATCH primitive "vga_controller:vga_ins|score_printer:score_ind|numH[2]" is permanently enabled File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Warning (14026): LATCH primitive "vga_controller:vga_ins|score_printer:score_ind|numH[3]" is permanently enabled File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Warning (14026): LATCH primitive "vga_controller:vga_ins|score_printer:score_ind|numH[4]" is permanently enabled File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Warning (14026): LATCH primitive "vga_controller:vga_ins|score_printer:score_ind|numH[5]" is permanently enabled File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
+Warning (14026): LATCH primitive "vga_controller:vga_ins|score_printer:score_ind|numH[6]" is permanently enabled File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 111
 Warning (276020): Inferred RAM node "ps2:myps2|fifo_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "ps2:myps2|fifo_rtl_0" 
@@ -3719,6 +3829,9 @@ Info (19000): Inferred 1 megafunctions from design logic
         Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Div0" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 76
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod0" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 75
 Info (12130): Elaborated megafunction instantiation "ps2:myps2|altsyncram:fifo_rtl_0"
 Info (12133): Instantiated megafunction "ps2:myps2|altsyncram:fifo_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
@@ -3737,6 +3850,30 @@ Info (12133): Instantiated megafunction "ps2:myps2|altsyncram:fifo_rtl_0" with t
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_q9c1.tdf
     Info (12023): Found entity 1: altsyncram_q9c1 File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/altsyncram_q9c1.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Div0" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 76
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Div0" with the following parameter: File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 76
+    Info (12134): Parameter "LPM_WIDTHN" = "19"
+    Info (12134): Parameter "LPM_WIDTHD" = "10"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ikm.tdf
+    Info (12023): Found entity 1: lpm_divide_ikm File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/lpm_divide_ikm.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_anh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_anh File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/sign_div_unsign_anh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_8af.tdf
+    Info (12023): Found entity 1: alt_u_div_8af File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/alt_u_div_8af.tdf Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/add_sub_7pc.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/add_sub_8pc.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod0" File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 75
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod0" with the following parameter: File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/vga_controller.v Line: 75
+    Info (12134): Parameter "LPM_WIDTHN" = "19"
+    Info (12134): Parameter "LPM_WIDTHD" = "10"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_lcm.tdf
+    Info (12023): Found entity 1: lpm_divide_lcm File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/db/lpm_divide_lcm.tdf Line: 24
 Info (13000): Registers with preset signals will power-up high File: D:/Books/ECE550/Projects/Final Project/Tetris_on_Processor/Project_Files/cpu550-2016fasolution/lcd.vhd Line: 38
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
@@ -3757,16 +3894,16 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 2 node(s), including 0 DDIO, 2 PLL, 0 transceiver and 0 LCELL
 Warning (15897): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameter compensate_clock set to clock0 but port CLK[0] is not connected File: d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/altpll.tdf Line: 920
 Warning (15899): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected File: d:/tools/intelfpgalite18.0/quartus/libraries/megafunctions/altpll.tdf Line: 920
-Info (21057): Implemented 4705 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5038 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 50 output pins
-    Info (21061): Implemented 4250 logic cells
+    Info (21061): Implemented 4583 logic cells
     Info (21064): Implemented 399 RAM segments
     Info (21065): Implemented 2 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 97 warnings
-    Info: Peak virtual memory: 4924 megabytes
-    Info: Processing ended: Fri Dec 02 20:36:10 2022
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:39
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 112 warnings
+    Info: Peak virtual memory: 4927 megabytes
+    Info: Processing ended: Sat Dec 03 16:24:37 2022
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:38
 
 
